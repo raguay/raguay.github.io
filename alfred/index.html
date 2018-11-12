@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Custom Computer Tools">
 <meta property="og:description" content="Alfred is a great companion working on the Mac. It helps me in all of my chores and tasks. I currently average 180+ usages a day with Alfred with my top level of useage at 768 times in one day! Much o">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-09T11:50:01.959Z">
+<meta property="og:updated_time" content="2018-11-12T05:54:52.232Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Alfred Workflows">
 <meta name="twitter:description" content="Alfred is a great companion working on the Mac. It helps me in all of my chores and tasks. I currently average 180+ usages a day with Alfred with my top level of useage at 768 times in one day! Much o">
@@ -96,166 +96,7 @@
       
         <p>Alfred is a great companion working on the Mac. It helps me in all of my chores and tasks. I currently average 180+ usages a day with Alfred with my top level of useage at 768 times in one day! Much of that is due to the workflows I have made to help me do my work. Remember, you have to have the right tool for the right job.</p>
 <p>On this page, I would like to share with you some of my tools. Maybe they will help your jobs go more smoothly! You can download each of these workflows from my <a href="https://github.com/raguay/MyAlfred" target="_blank" rel="noopener">GitHub Account</a>. The GitHub account has a directory for Alfred 2 and Alfred 3. Use the directory that matches your version of Alfred. I’m not adding new feature to the Alfred 2 workflows, but all of them have a match in the Alfred 3 directory. I highly recommend using Alfred 3.</p>
-<h2 id="Workflows"><a href="#Workflows" class="headerlink" title="Workflows"></a>Workflows</h2><h2 id="Quiver-Workflow"><a href="#Quiver-Workflow" class="headerlink" title="Quiver Workflow"></a>Quiver Workflow</h2><p>This workflow allows you to create templates with Handlebar syntax inside of the <strong><a href="http://happenapps.com/#quiver" target="_blank" rel="noopener">Quiver</a></strong> program. To use the workflow, you have to have Node.js installed first. I recommend using <strong><a href="http://brew.io" target="_blank" rel="noopener">Homebrew</a></strong> to install it.</p>
-<p>Once <strong>Node.js</strong> is installed, go to your Quiver Library file in Alfred Browser and select the “<strong>Set Quiver Library</strong>” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults. The Defaults note has to have one code block set to JSON and the defaults for the Handlebar expansions set. The rest of the notes will be templates.</p>
-<p>When you run “<strong>qt:expand</strong>” or “<strong>qt:exptext</strong>”, it will list all of your template files in the Snippets notebook. When you select one, it will be expanded with any json cell the note and the Defaults json note data. The “<strong>qt:expand</strong>” will put the result into your clipboard and the topmost application. The “<strong>qt:exptext</strong>” will give it to TextExpander to expand and place in the topmost application. With the “<strong>qt:exptext</strong>” command, TextExpander will also expand any of it’s macros in the template file. I mostly use it for placing the cursor after expansion. These two commands also have an associated Alfred Browser File action.</p>
-<p>There are four special helper function for Handlebars defined. These functions should be placed inside double or triple brackets. They are:</p>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>save <name> <text></text></name></td>
-<td>This command creates a helper named “<name>” with the expanding text of “<text>”. It also places the given “<text>” at the point of definition. This allows you to create text snippets on the fly inside the template. Very handy.</text></text></name></td>
-</tr>
-<tr>
-<td>clipboard</td>
-<td>This helper command places the current clipboard contents at the point in the template.</td>
-</tr>
-<tr>
-<td>date <format></format></td>
-<td>This will format the current date and time as per the format string given. See the help document that is loaded upon initialization.</td>
-</tr>
-<tr>
-<td>cdate &lt;date/time&gt; <format></format></td>
-<td>This takes the date/time string and formats it according to the format given.  See the help document that is loaded upon initialization.</td>
-</tr>
-</tbody>
-</table>
-<p>The following data expansions are defined as well:</p>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>cDateMDY</td>
-<td>gives the current date in Month Day, 4-digit year format</td>
-</tr>
-<tr>
-<td>cDateDMY</td>
-<td>gives the current date in Day Month 4-digit Year format</td>
-</tr>
-<tr>
-<td>cDateDOWDMY</td>
-<td>gives the current date in Day of Week, Day Month 4-digit year format</td>
-</tr>
-<tr>
-<td>cDateDOWMDY</td>
-<td>gives the current date in Day of Week Month Day, 4-digit year format</td>
-</tr>
-<tr>
-<td>cDay</td>
-<td>gives the current date in Day format</td>
-</tr>
-<tr>
-<td>cMonth</td>
-<td>gives the current date in Month format</td>
-</tr>
-<tr>
-<td>cYear</td>
-<td>gives the current date in 4-digit year format</td>
-</tr>
-<tr>
-<td>cMonthShort</td>
-<td>gives the current date in Short Month name format</td>
-</tr>
-<tr>
-<td>cYearShort</td>
-<td>gives the current date in 2-digit year format</td>
-</tr>
-<tr>
-<td>cDOW</td>
-<td>gives the current date in Day of Week format</td>
-</tr>
-<tr>
-<td>cMDthYShort</td>
-<td>gives the current date in Month day 2-digit year format</td>
-</tr>
-<tr>
-<td>cMDthY</td>
-<td>gives the current date in Month Day 4-digit year format</td>
-</tr>
-<tr>
-<td>cHMSampm</td>
-<td>gives the current date in h:mm:ss a format</td>
-</tr>
-<tr>
-<td>cHMampm</td>
-<td>gives the current date in h:mm a format</td>
-</tr>
-<tr>
-<td>cHMS24</td>
-<td>gives the current date in H:mm:ss 24 hour format</td>
-</tr>
-<tr>
-<td>cHM24</td>
-<td>gives the current date in H:mm 24 hour format</td>
-</tr>
-</tbody>
-</table>
-<p>There is more to come!</p>
-<h2 id="Thai-Translation-Workflow"><a href="#Thai-Translation-Workflow" class="headerlink" title="Thai Translation Workflow"></a>Thai Translation Workflow</h2><p>This workflow does web scraping on the <a href="http://www.thai-language.com/" target="_blank" rel="noopener">http://www.thai-language.com/</a> site to translate words from english to thai/thai to english. It does an exact match first. If the exact match fails, then it does an inexact match. Consequently, the results do not always produce what you would expect all the time.</p>
-<p>Remember to set the result count with “tt:setcount”!</p>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>tt:engthai</td>
-<td>Translate an English word to Thai.</td>
-</tr>
-<tr>
-<td>tt:thaieng</td>
-<td>Translate a Thai word to English.</td>
-</tr>
-<tr>
-<td>tt:setcount</td>
-<td>Set the number of results to display to the user.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="DockShelf-Workflow"><a href="#DockShelf-Workflow" class="headerlink" title="DockShelf Workflow"></a>DockShelf Workflow</h2><p>This workflow is for automating the <a href="http://www.thealchemistguild.com/dockshelf/" target="_blank" rel="noopener">DockShelf</a> program. The following items are defined:</p>
-<h3 id="Commands"><a href="#Commands" class="headerlink" title="Commands:"></a>Commands:</h3><table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ds:space</td>
-<td>This command will show a list of workspaces currently defined. You can narrow the list by typing part of a name. Selecting one causes DockShelf to switch to that workspace.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="External-Triggers"><a href="#External-Triggers" class="headerlink" title="External Triggers:"></a>External Triggers:</h3><table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Focus Named Workspace</td>
-<td>This external trigger will switch to the workspace given.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Template-Workflow"><a href="#Template-Workflow" class="headerlink" title="Template Workflow"></a>Template Workflow</h2><p>This workflow allows you to create templates with Handlebar syntax. To use the workflow, you have to have Node.js installed first. I recommend using <a href="http://brew.io" target="_blank" rel="noopener">Homebrew</a> to install it.</p>
+<h2 id="Workflows"><a href="#Workflows" class="headerlink" title="Workflows"></a>Workflows</h2><h2 id="Quiver-Workflow"><a href="#Quiver-Workflow" class="headerlink" title="Quiver Workflow"></a><a href="/alfred-quiver">Quiver Workflow</a></h2><h2 id="Thai-Translation-Workflow"><a href="#Thai-Translation-Workflow" class="headerlink" title="Thai Translation Workflow"></a><a href="/alfred-thai">Thai Translation Workflow</a></h2><h2 id="DockShelf-Workflow"><a href="#DockShelf-Workflow" class="headerlink" title="DockShelf Workflow"></a><a href="/alfred-dockshelf">DockShelf Workflow</a></h2><h1 id="Template-Workflow"><a href="#Template-Workflow" class="headerlink" title="Template Workflow"></a>Template Workflow</h1><p>This workflow allows you to create templates with Handlebar syntax. To use the workflow, you have to have Node.js installed first. I recommend using <a href="http://brew.io" target="_blank" rel="noopener">Homebrew</a> to install it.</p>
 <p>Once Node.js is installed, go to your snippets directory in Alfred Browser and select the <strong>Set Template Directory</strong> file action. This tells the workflow where your templates (or snippets) are to be kept.</p>
 <p>You then run the <strong>tp:install</strong> to install the example templates and a default global.json file. This file should be edited to match your needs. Any data item added to this file is then passed to the Handlebar render as data. All templates have to have the “.txt” extension. If you want data to be associated with a template, then place a JSON file with the same name as the template in the t</p>
 <p>When you run <strong>tp:expand</strong> or <strong>tp:exptext</strong>, it will list all of your template files in the template directory. When you select one, it will be expanded with any json file with the same name and the global json file data. The <strong>tp:expand</strong> will put the result into your clipboard and the topmost application. The <strong>tp:exptext</strong> will give it to TextExpander to expand and place in the topmost application. With the <strong>tp:exptext</strong> command, TextExpander will also expand any of it’s macros in the template file. I mostly use it for placing the cursor after expansion. These two commands also have an associated Alfred Browser File action.</p>
@@ -1131,8 +972,7 @@
 <tbody>
 <tr>
 <td>s3c:copydir</td>
-<td>This keywork allows you to pick a directory that contains videos (mp4</td>
-<td>mov). The videos will be copied to the corresponding directory on s3. Make sure to set the base directory using “s3c:base”.</td>
+<td>This keywork allows you to pick a directory that contains videos (mp4 or mov). The videos will be copied to the corresponding directory on s3. Make sure to set the base directory using “s3c:base”.</td>
 </tr>
 <tr>
 <td>s3c:base</td>
@@ -1604,7 +1444,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://customct.com/alfred/index.html" data-id="cjo9yuqwn0003q4x56fhp3a27" class="article-share-link">Share</a>
+      <a data-url="http://customct.com/alfred/index.html" data-id="cjodwkjc90007syx5tvpfkmnk" class="article-share-link">Share</a>
       
       
     </footer>

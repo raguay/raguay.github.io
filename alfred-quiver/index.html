@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Alfred/quiver | Custom Computer Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Quiver WorkflowThis workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebre">
+<meta name="keywords" content="freelance programming node.js JavaScript HTML CSS Mint">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alfred&#x2F;quiver">
+<meta property="og:url" content="http://customct.com/alfred-quiver/index.html">
+<meta property="og:site_name" content="Custom Computer Tools">
+<meta property="og:description" content="Quiver WorkflowThis workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebre">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-11-12T05:57:03.370Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Alfred&#x2F;quiver">
+<meta name="twitter:description" content="Quiver WorkflowThis workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebre">
+  
+    <link rel="alternate" href="/atom.xml" title="Custom Computer Tools" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/main/" id="logo">Custom Computer Tools</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">The right tool for the right job!</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/main">Pages</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://customct.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/alfred-quiver/index.html" class="article-date">
+  <time datetime="2018-11-12T05:55:32.000Z" itemprop="datePublished">11-12-2018</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Alfred/quiver
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Quiver-Workflow"><a href="#Quiver-Workflow" class="headerlink" title="Quiver Workflow"></a>Quiver Workflow</h3><p>This workflow allows you to create templates with Handlebar syntax inside of the <strong><a href="http://happenapps.com/#quiver" target="_blank" rel="noopener">Quiver</a></strong> program. To use the workflow, you have to have Node.js installed first. I recommend using <strong><a href="http://brew.io" target="_blank" rel="noopener">Homebrew</a></strong> to install it.</p>
+<p>Once <strong>Node.js</strong> is installed, go to your Quiver Library file in Alfred Browser and select the “<strong>Set Quiver Library</strong>” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults. The Defaults note has to have one code block set to JSON and the defaults for the Handlebar expansions set. The rest of the notes will be templates.</p>
+<p>When you run “<strong>qt:expand</strong>” or “<strong>qt:exptext</strong>”, it will list all of your template files in the Snippets notebook. When you select one, it will be expanded with any json cell the note and the Defaults json note data. The “<strong>qt:expand</strong>” will put the result into your clipboard and the topmost application. The “<strong>qt:exptext</strong>” will give it to TextExpander to expand and place in the topmost application. With the “<strong>qt:exptext</strong>” command, TextExpander will also expand any of it’s macros in the template file. I mostly use it for placing the cursor after expansion. These two commands also have an associated Alfred Browser File action.</p>
+<p>There are four special helper function for Handlebars defined. These functions should be placed inside double or triple brackets. They are:</p>
+<p><strong>save &lt;name&gt; &lt;text&gt;</strong><br>This command creates a helper named “&lt;name&gt;” with the expanding text of “&lt;text&gt;”. It also places the given “&lt;text&gt;” at the point of definition. This allows you to create text snippets on the fly inside the template. Very handy.</p>
+<p><strong>clipboard</strong><br>This helper command places the current clipboard contents at the point in the template.</p>
+<p><strong>date &lt;format&gt;</strong><br>This will format the current date and time as per the format string given. See the help document that is loaded upon initialization.</p>
+<p><strong>cdate &lt;date/time&gt; &lt;format&gt;</strong><br>This takes the date/time string and formats it according to the format given.  See the help document that is loaded upon initialization.</p>
+<p>The following data expansions are defined as well:</p>
+<p><strong>cDateMDY</strong> gives the current date in Month Day, 4-digit year format</p>
+<p><strong>cDateDMY</strong> gives the current date in Day Month 4-digit Year format</p>
+<p><strong>cDateDOWDMY</strong> gives the current date in Day of Week, Day Month 4-digit year format</p>
+<p><strong>cDateDOWMDY</strong> gives the current date in Day of Week Month Day, 4-digit year format</p>
+<p><strong>cDay</strong> gives the current date in Day format</p>
+<p><strong>cMonth</strong> gives the current date in Month format</p>
+<p><strong>cYear</strong> gives the current date in 4-digit year format</p>
+<p><strong>cMonthShort</strong> gives the current date in Short Month name format</p>
+<p><strong>cYearShort</strong> gives the current date in 2-digit year format</p>
+<p><strong>cDOW</strong> gives the current date in Day of Week format</p>
+<p><strong>cMDthYShort</strong> gives the current date in Month day 2-digit year format</p>
+<p><strong>cMDthY</strong> gives the current date in Month Day 4-digit year format</p>
+<p><strong>cHMSampm</strong> gives the current date in h:mm:ss a format</p>
+<p><strong>cHMampm</strong> gives the current date in h:mm a format</p>
+<p><strong>cHMS24</strong> gives the current date in H:mm:ss 24 hour format</p>
+<p><strong>cHM24</strong> gives the current date in H:mm 24 hour format</p>
+<p>There is more to come!</p>
+<h3 id="Donate"><a href="#Donate" class="headerlink" title="Donate"></a>Donate</h3><p>If you like the information here, please consider a donation to keep it going! Thanks!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://customct.com/alfred-quiver/index.html" data-id="cjodwkjap0003syx5phji9vi1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/08/hello-world/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Richard Guay<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Blog</a>
+  
+    <a href="/main" class="mobile-nav-link">Pages</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
