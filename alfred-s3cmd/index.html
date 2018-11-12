@@ -5,20 +5,20 @@
   
 
   
-  <title>Time Adding Workflow | Custom Computer Tools</title>
+  <title>S3cmd Workflow | Custom Computer Tools</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflo">
+  <meta name="description" content="This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at http://s3tools.org/s3cmd. The workflow currently contains a cop">
 <meta name="keywords" content="freelance programming node.js JavaScript HTML CSS Mint">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Time Adding Workflow">
-<meta property="og:url" content="http://customct.com/alfred-addtime/index.html">
+<meta property="og:title" content="S3cmd Workflow">
+<meta property="og:url" content="http://customct.com/alfred-s3cmd/index.html">
 <meta property="og:site_name" content="Custom Computer Tools">
-<meta property="og:description" content="I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflo">
+<meta property="og:description" content="This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at http://s3tools.org/s3cmd. The workflow currently contains a cop">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-12T06:12:43.365Z">
+<meta property="og:updated_time" content="2018-11-12T10:50:05.285Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Time Adding Workflow">
-<meta name="twitter:description" content="I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflo">
+<meta name="twitter:title" content="S3cmd Workflow">
+<meta name="twitter:description" content="This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at http://s3tools.org/s3cmd. The workflow currently contains a cop">
   
     <link rel="alternate" href="/atom.xml" title="Custom Computer Tools" type="application/atom+xml">
   
@@ -74,8 +74,8 @@
       <div class="outer">
         <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/alfred-addtime/index.html" class="article-date">
-  <time datetime="2018-11-12T05:49:57.000Z" itemprop="datePublished">11-12-2018</time>
+    <a href="/alfred-s3cmd/index.html" class="article-date">
+  <time datetime="2018-11-12T10:45:03.000Z" itemprop="datePublished">11-12-2018</time>
 </a>
     
   </div>
@@ -86,7 +86,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Time Adding Workflow
+      S3cmd Workflow
     </h1>
   
 
@@ -94,7 +94,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflow. The time will be accumulated. You can show the time in Hr:min:sec format or just plain minutes. Have fun!</p>
+        <p>This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at <a href="http://s3tools.org/s3cmd" target="_blank" rel="noopener">http://s3tools.org/s3cmd</a>. The workflow currently contains a copy of the s3cmd tool. You will need to open a terminal to the directory that contains the workflow to set your s3 credentials. Please see the directions at <a href="http://s3tools.org/s3cmd" target="_blank" rel="noopener">http://s3tools.org/s3cmd</a> to know how to set it up. Here are the currently supported keywords and file actions:</p>
 <table>
 <thead>
 <tr>
@@ -104,25 +104,53 @@
 </thead>
 <tbody>
 <tr>
-<td>ta:clear</td>
-<td>This clears the accumulator</td>
+<td>s3c:copydir</td>
+<td>This keywork allows you to pick a directory that contains videos (mp4</td>
+<td>mov). The videos will be copied to the corresponding directory on s3. Make sure to set the base directory using “s3c:base”.</td>
 </tr>
 <tr>
-<td>ta:showmin</td>
-<td>Show the accumulated time in just minutes.</td>
+<td>s3c:base</td>
+<td>You use this keyword to set the base directory for s3. It should be the format of “s3://{bucket}/directory/..”. It has to be set to “s3://{bucket name}” as the minimum.</td>
 </tr>
 <tr>
-<td>ta:showhr</td>
-<td>Show the accumulated time</td>
+<td>s3c:target</td>
+<td>This keyword is used to set a target directory under the base directory to copy individual files to s3 using the file action.</td>
+</tr>
+<tr>
+<td>s3c:webheader</td>
+<td>This keyword is used to set a web header for getting a web friendly url to an item in your s3.</td>
+</tr>
+<tr>
+<td>s3c:sbase</td>
+<td>This will show the base directory in a notification.</td>
+</tr>
+<tr>
+<td>s3c:starget</td>
+<td>This will show the target directory in a notification.</td>
+</tr>
+<tr>
+<td>s3c:swebheader</td>
+<td>This will show the header to make a web friendly address in a notification.</td>
+</tr>
+<tr>
+<td>s3c:copy file</td>
+<td>This file action will copy the file in the Alfred browser to the base and target directory on s3.</td>
+</tr>
+<tr>
+<td>s3c:list</td>
+<td>This keyword action allows you to browse your S3 directory. If you hit “cmd-enter” on an item, it will download it to your Download directory. If you hit “alt-enter” on an item, it will set that directory as your target directory for uploading files. If you hit “ctl-enter” on an item, it will push a web facing friendly url for that item in to the clipboard. If you hit “shift-enter” on an item, it will set the items directory as the base directory for future browsing. If you hit “function-enter” on an item, you can move the item to a new name or location. It will prompt for the new location with a copy of the original item twice. You change the second one. If you start typing after the keyword, your selection will be reduced to selections that match what you type.</td>
+</tr>
+<tr>
+<td>s3c:configure</td>
+<td>This keyword will open a terminal and start the configuration process for the s3cmd command line tool. This has to be done before using the other commands.</td>
 </tr>
 </tbody>
 </table>
-<p>There is a hotkey you need to set for adding the currently selected time.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://customct.com/alfred-addtime/index.html" data-id="cjoebi33q0001kyx5u2id0kcc" class="article-share-link">Share</a>
+      <a data-url="http://customct.com/alfred-s3cmd/index.html" data-id="cjoebi34j000wkyx5v2xxehvk" class="article-share-link">Share</a>
       
       
     </footer>

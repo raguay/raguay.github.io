@@ -5,20 +5,20 @@
   
 
   
-  <title>Hello World | Custom Computer Tools</title>
+  <title>Next Item Workflow | Custom Computer Tools</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I’m working at moving my site to GitHub pages using Hexo.">
+  <meta name="description" content="This little workflow allows you to sequentially step through items in multiple list files. You use the “Next Item: Set File” file action on the file containing a list of items: One item per line. For">
 <meta name="keywords" content="freelance programming node.js JavaScript HTML CSS Mint">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://customct.com/2018/11/08/hello-world/hello-world/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Next Item Workflow">
+<meta property="og:url" content="http://customct.com/alfred-nextitem/index.html">
 <meta property="og:site_name" content="Custom Computer Tools">
-<meta property="og:description" content="I’m working at moving my site to GitHub pages using Hexo.">
+<meta property="og:description" content="This little workflow allows you to sequentially step through items in multiple list files. You use the “Next Item: Set File” file action on the file containing a list of items: One item per line. For">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-08T07:35:50.225Z">
+<meta property="og:updated_time" content="2018-11-12T09:50:58.483Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="I’m working at moving my site to GitHub pages using Hexo.">
+<meta name="twitter:title" content="Next Item Workflow">
+<meta name="twitter:description" content="This little workflow allows you to sequentially step through items in multiple list files. You use the “Next Item: Set File” file action on the file containing a list of items: One item per line. For">
   
     <link rel="alternate" href="/atom.xml" title="Custom Computer Tools" type="application/atom+xml">
   
@@ -72,10 +72,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-hello-world/hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/11/08/hello-world/hello-world/" class="article-date">
-  <time datetime="2018-11-08T07:35:50.225Z" itemprop="datePublished">11-08-2018</time>
+    <a href="/alfred-nextitem/index.html" class="article-date">
+  <time datetime="2018-11-12T09:46:48.000Z" itemprop="datePublished">11-12-2018</time>
 </a>
     
   </div>
@@ -86,7 +86,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Next Item Workflow
     </h1>
   
 
@@ -94,12 +94,52 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I’m working at moving my site to GitHub pages using <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>.</p>
+        <p>This little workflow allows you to sequentially step through items in multiple list files. You use the “Next Item: Set File” file action on the file containing a list of items: One item per line. For example, a list of urls; one per line. Then the hot key will take the next item from the specified first list and copy it to the clipboard and to a notification. If you view all lists before the first list, you will see each corresponding item for each list. The counter is only incremented after passing the item from the first list.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni:move #</td>
+<td>This will move the last set file to the # list. If you do not move the file items to a list number, then it will not get sent to you.</td>
+</tr>
+<tr>
+<td>ni:item</td>
+<td>This will give the next item from the first list and increment the counter.</td>
+</tr>
+<tr>
+<td>ni:l #</td>
+<td>This will give the next item from the # list, but the count will not be incremented unless it is list 1.</td>
+</tr>
+<tr>
+<td>ni:inc and ni:dec</td>
+<td>These will increment or decrement the counter.</td>
+</tr>
+<tr>
+<td>ni:set</td>
+<td>allows you to set the counter to any number.</td>
+</tr>
+<tr>
+<td>ni:clear</td>
+<td>will clear the counter and erase the temporary files.</td>
+</tr>
+<tr>
+<td>ni:current</td>
+<td>will display the current count number.</td>
+</tr>
+</tbody>
+</table>
+<p>The items are addressed using a zero reference. Therefore, if the counter is 1, the the second line in the file will be displayed.</p>
+<p>Setting a new list will clear the count. The file specified is copied to a work area that all the other scripts will use to access it. Therefore, you do not need to worry about the original file being changed.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://customct.com/2018/11/08/hello-world/hello-world/" data-id="cjoebi35t001dkyx5qah6r7ih" class="article-share-link">Share</a>
+      <a data-url="http://customct.com/alfred-nextitem/index.html" data-id="cjoebi34e000nkyx5b9o9ewtu" class="article-share-link">Share</a>
       
       
     </footer>

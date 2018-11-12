@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>FoldingText Workflow | Custom Computer Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This workflow is for working with todo lists using TaskPaper or FoldingText. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to wri">
+<meta name="keywords" content="freelance programming node.js JavaScript HTML CSS Mint">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FoldingText Workflow">
+<meta property="og:url" content="http://customct.com/alfred-foldingtext/index.html">
+<meta property="og:site_name" content="Custom Computer Tools">
+<meta property="og:description" content="This workflow is for working with todo lists using TaskPaper or FoldingText. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to wri">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-11-12T11:04:03.078Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FoldingText Workflow">
+<meta name="twitter:description" content="This workflow is for working with todo lists using TaskPaper or FoldingText. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to wri">
+  
+    <link rel="alternate" href="/atom.xml" title="Custom Computer Tools" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/main/" id="logo">Custom Computer Tools</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">The right tool for the right job!</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/main">Pages</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://customct.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/alfred-foldingtext/index.html" class="article-date">
+  <time datetime="2018-11-12T11:03:30.000Z" itemprop="datePublished">11-12-2018</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      FoldingText Workflow
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>This workflow is for working with todo lists using <a href="http://www.hogbaysoftware.com/products/taskpaper" target="_blank" rel="noopener">TaskPaper</a> or <a href="http://www.foldingtext.com/" target="_blank" rel="noopener">FoldingText</a>. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>t:settodo</td>
+<td>This command allows you to set the directory for your todos. It will setup the supporting files and sub-directories as  well. This is the first action to perform with this workflow.</td>
+</tr>
+<tr>
+<td>t:createtodaytodo</td>
+<td>This command will take the everyday, weekly, monthly, and dated todos and combine them to the left over todos from the last time you created todos. It will also archive the finished todos. Todos that are repeated from the dated category are reset according to the repeat pattern.</td>
+</tr>
+<tr>
+<td>t:showtoday</td>
+<td>This command will open todays (or the most current) todo list in TaskPaper.</td>
+</tr>
+<tr>
+<td>t:showyesterday</td>
+<td>This command will open yesterdays (or the one before the most current) todo list in TaskPaper.</td>
+</tr>
+<tr>
+<td>t:showfinished</td>
+<td>This command will open the archived done tasks in TaskPaper.</td>
+</tr>
+<tr>
+<td>t:addmonthlytodo</td>
+<td>This command will ask for the day of the month and the task. It will then place that in the monthly todo  directory for that day. When a new todo list is created, then it will pull in that days tasks.</td>
+</tr>
+<tr>
+<td>t:addeveryday</td>
+<td>This adds a task to the everyday task list. Every task placed in this list will be added to the current todo list everytime it is created.</td>
+</tr>
+<tr>
+<td>t:addweekdaytask</td>
+<td>This command will ask for the day of the week and the task. It will  then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks.</td>
+</tr>
+<tr>
+<td>t:doing</td>
+<td>This creates a new dated entry for the current journal. It will ask which journal to place the entry into. The standard  doing.txt journal will automatically be created.</td>
+</tr>
+<tr>
+<td>t:showdoing</td>
+<td>This opens the current doing journal in TaskPaper.</td>
+</tr>
+<tr>
+<td>t:showprojects</td>
+<td>This opens the projects task file in TaskPaper. This is for ongoing projects and their tasks.</td>
+</tr>
+<tr>
+<td>t:sortdone</td>
+<td>This command takes the topmost TaskPaper list and sorts all of the done tag entries to the bottom.</td>
+</tr>
+<tr>
+<td>t:seteditor</td>
+<td>This command is for setting the text editor to use.</td>
+</tr>
+<tr>
+<td>t:newjournal</td>
+<td>This command will allow you to create new journal files.</td>
+</tr>
+<tr>
+<td>t:showjournal</td>
+<td>This command is for opening a journal in the editor. It will ask which journal and give you the current list of  journals.</td>
+</tr>
+<tr>
+<td>t:settz</td>
+<td>This command is for setting the time zone. A list of time zones will be given and you select the one you are in.</td>
+</tr>
+<tr>
+<td>t:showtz</td>
+<td>This command will show the currently set time zone.</td>
+</tr>
+<tr>
+<td>t:next</td>
+<td>This finds the tag @next, marks that task done, and adds it to the next task.</td>
+</tr>
+<tr>
+<td>t:adddatedtask</td>
+<td>This allows you to add a task on a particular date that can repeat also. You can repeat by days, weeks, months, or years. It also shows all dated tasks and allows for deleting them.</td>
+</tr>
+<tr>
+<td>t:managemonthly</td>
+<td>This allows you to pick a monthly task and edit the file or delete the file.</td>
+</tr>
+<tr>
+<td>t:manageweekly</td>
+<td>This allows you to pick a weekly task to edit or delete.</td>
+</tr>
+<tr>
+<td>t:editeverydaytask</td>
+<td>This allows you to edit the everyday task file.</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://customct.com/alfred-foldingtext/index.html" data-id="cjoebi348000fkyx52l8ttc2b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/08/hello-world/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Richard Guay<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Blog</a>
+  
+    <a href="/main" class="mobile-nav-link">Pages</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

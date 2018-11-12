@@ -5,20 +5,20 @@
   
 
   
-  <title>Thai Translation Workflow | Custom Computer Tools</title>
+  <title>NW.js Workflow | Custom Computer Tools</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This workflow does web scraping on the http://www.thai-language.com/ site to translate words from english to thai/thai to english. It does an exact match first. If the exact match fails, then it does">
+  <meta name="description" content="NW.js is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any io.js (formerly node.js) library. There has been a mo">
 <meta name="keywords" content="freelance programming node.js JavaScript HTML CSS Mint">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Thai Translation Workflow">
-<meta property="og:url" content="http://customct.com/alfred-thai/index.html">
+<meta property="og:title" content="NW.js Workflow">
+<meta property="og:url" content="http://customct.com/alfred-nwjs/index.html">
 <meta property="og:site_name" content="Custom Computer Tools">
-<meta property="og:description" content="This workflow does web scraping on the http://www.thai-language.com/ site to translate words from english to thai/thai to english. It does an exact match first. If the exact match fails, then it does">
+<meta property="og:description" content="NW.js is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any io.js (formerly node.js) library. There has been a mo">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-12T06:15:47.898Z">
+<meta property="og:updated_time" content="2018-11-12T08:19:09.607Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Thai Translation Workflow">
-<meta name="twitter:description" content="This workflow does web scraping on the http://www.thai-language.com/ site to translate words from english to thai/thai to english. It does an exact match first. If the exact match fails, then it does">
+<meta name="twitter:title" content="NW.js Workflow">
+<meta name="twitter:description" content="NW.js is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any io.js (formerly node.js) library. There has been a mo">
   
     <link rel="alternate" href="/atom.xml" title="Custom Computer Tools" type="application/atom+xml">
   
@@ -74,8 +74,8 @@
       <div class="outer">
         <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/alfred-thai/index.html" class="article-date">
-  <time datetime="2018-11-12T05:55:41.000Z" itemprop="datePublished">11-12-2018</time>
+    <a href="/alfred-nwjs/index.html" class="article-date">
+  <time datetime="2018-11-12T08:07:47.000Z" itemprop="datePublished">11-12-2018</time>
 </a>
     
   </div>
@@ -86,7 +86,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Thai Translation Workflow
+      NW.js Workflow
     </h1>
   
 
@@ -94,16 +94,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>This workflow does web scraping on the <a href="http://www.thai-language.com/" target="_blank" rel="noopener">http://www.thai-language.com/</a> site to translate words from english to thai/thai to english. It does an exact match first. If the exact match fails, then it does an inexact match. Consequently, the results do not always produce what you would expect all the time.</p>
-<p>Remember to set the result count with “tt:setcount”!</p>
-<p><strong>tt:engthai</strong><br>Translate an English word to Thai.</p>
-<p><strong>tt:thaieng</strong><br>Translate a Thai word to English.</p>
-<p><strong>tt:setcount</strong><br>Set the number of results to display to the user.</p>
+        <p>NW.js is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any io.js (formerly node.js) library. There has been a move to this new version due to the node.js project in a stalemate and far behind in development compared to what Chrome is using.</p>
+<p>Once you have your application developed, you can zip it up with a config.json file.</p>
+<p>The workflow provides the following commands:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nw:website</td>
+<td>This opens the NW.js website on GitHub. If you hold down the &lt;cmd&gt; key, it will open the io.js website.</td>
+</tr>
+<tr>
+<td>nw:open</td>
+<td>When the user starts typing, a file ending in the “.nw” extension is looked for according to the work typed. Therefore, if there is a file called “new.nw”, as soon as “n” is typed , that file will be displayed.</td>
+</tr>
+<tr>
+<td>nw:opendir</td>
+<td>Opens the current directory in Finder or Path Finder using Node Webkit. The config.json file should be in that directory.</td>
+</tr>
+<tr>
+<td>nw:help</td>
+<td>Opens this help program.</td>
+</tr>
+</tbody>
+</table>
+<p>There are also two File Actions defined: <em>Open Directory</em> that is available on directories, and <em>Open NW.js Package</em> that is available on NW.js packages.</p>
+<p>There are also two External Triggers: <em>RunNWjsDirectory</em> and <em>RunNWjsPackage</em> which work the same as the file actions. These allow external programs or other Alfred workflows to call a Node Webkit application by passing the full path of the application bundle or directory. The help option for this workflow shows an example of using these External Triggers.</p>
+<p>The following code will open the help application that is located in the same directory as the code:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">thisDir=`pwd`;</span><br><span class="line"></span><br><span class="line">/usr/bin/osascript -e <span class="string">"tell application \"Alfred 2\" to run trigger \"RunNWjsDirectory\" in workflow \"com.customct.NWjs\" with argument \"$thisDir/help\""</span></span><br></pre></td></tr></table></figure>
+<p>The directory path given in the argument tells NW.js where to load the program. It is set with the <em>pwd</em> command.</p>
+<p>There will be more tutorials and hacks using this workflow on my website <a href="http://customct.com">Custom Computer Tools</a>.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://customct.com/alfred-thai/index.html" data-id="cjoebi34o0013kyx52dj6euzj" class="article-share-link">Share</a>
+      <a data-url="http://customct.com/alfred-nwjs/index.html" data-id="cjoebi34f000pkyx5orbzvsx7" class="article-share-link">Share</a>
       
       
     </footer>

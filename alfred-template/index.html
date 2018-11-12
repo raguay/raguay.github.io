@@ -5,20 +5,20 @@
   
 
   
-  <title>Quiver Workflow | Custom Computer Tools</title>
+  <title>Template Workflow | Custom Computer Tools</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it">
+  <meta name="description" content="This workflow allows you to create templates with Handlebar syntax. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it. Once Node.js is installed,">
 <meta name="keywords" content="freelance programming node.js JavaScript HTML CSS Mint">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Quiver Workflow">
-<meta property="og:url" content="http://customct.com/alfred-quiver/index.html">
+<meta property="og:title" content="Template Workflow">
+<meta property="og:url" content="http://customct.com/alfred-template/index.html">
 <meta property="og:site_name" content="Custom Computer Tools">
-<meta property="og:description" content="This workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it">
+<meta property="og:description" content="This workflow allows you to create templates with Handlebar syntax. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it. Once Node.js is installed,">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-12T06:13:49.933Z">
+<meta property="og:updated_time" content="2018-11-12T06:42:20.235Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Quiver Workflow">
-<meta name="twitter:description" content="This workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it">
+<meta name="twitter:title" content="Template Workflow">
+<meta name="twitter:description" content="This workflow allows you to create templates with Handlebar syntax. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it. Once Node.js is installed,">
   
     <link rel="alternate" href="/atom.xml" title="Custom Computer Tools" type="application/atom+xml">
   
@@ -74,8 +74,8 @@
       <div class="outer">
         <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/alfred-quiver/index.html" class="article-date">
-  <time datetime="2018-11-12T05:55:32.000Z" itemprop="datePublished">11-12-2018</time>
+    <a href="/alfred-template/index.html" class="article-date">
+  <time datetime="2018-11-12T06:38:49.000Z" itemprop="datePublished">11-12-2018</time>
 </a>
     
   </div>
@@ -86,7 +86,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Quiver Workflow
+      Template Workflow
     </h1>
   
 
@@ -94,14 +94,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>This workflow allows you to create templates with Handlebar syntax inside of the <strong><a href="http://happenapps.com/#quiver" target="_blank" rel="noopener">Quiver</a></strong> program. To use the workflow, you have to have Node.js installed first. I recommend using <strong><a href="http://brew.io" target="_blank" rel="noopener">Homebrew</a></strong> to install it.</p>
-<p>Once <strong>Node.js</strong> is installed, go to your Quiver Library file in Alfred Browser and select the “<strong>Set Quiver Library</strong>” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults. The Defaults note has to have one code block set to JSON and the defaults for the Handlebar expansions set. The rest of the notes will be templates.</p>
-<p>When you run “<strong>qt:expand</strong>” or “<strong>qt:exptext</strong>”, it will list all of your template files in the Snippets notebook. When you select one, it will be expanded with any json cell the note and the Defaults json note data. The “<strong>qt:expand</strong>” will put the result into your clipboard and the topmost application. The “<strong>qt:exptext</strong>” will give it to TextExpander to expand and place in the topmost application. With the “<strong>qt:exptext</strong>” command, TextExpander will also expand any of it’s macros in the template file. I mostly use it for placing the cursor after expansion. These two commands also have an associated Alfred Browser File action.</p>
-<p>There are four special helper function for Handlebars defined. These functions should be placed inside double or triple brackets. They are:</p>
+        <p>This workflow allows you to create templates with Handlebar syntax. To use the workflow, you have to have Node.js installed first. I recommend using <a href="http://brew.io" target="_blank" rel="noopener">Homebrew</a> to install it.</p>
+<p>Once Node.js is installed, go to your snippets directory in Alfred Browser and select the <strong>Set Template Directory</strong> file action. This tells the workflow where your templates (or snippets) are to be kept.</p>
+<p>You then run the <strong>tp:install</strong> to install the example templates and a default global.json file. This file should be edited to match your needs. Any data item added to this file is then passed to the Handlebar render as data. All templates have to have the “.txt” extension. If you want data to be associated with a template, then place a JSON file with the same name as the template in the t</p>
+<p>When you run <strong>tp:expand</strong> or <strong>tp:exptext</strong>, it will list all of your template files in the template directory. When you select one, it will be expanded with any json file with the same name and the global json file data. The <strong>tp:expand</strong> will put the result into your clipboard and the topmost application. The <strong>tp:exptext</strong> will give it to TextExpander to expand and place in the topmost application. With the <strong>tp:exptext</strong> command, TextExpander will also expand any of it’s macros in the template file. I mostly use it for placing the cursor after expansion. These two commands also have an associated Alfred Browser File action.</p>
+<p>The <strong>tp:open</strong> command opens the template/snippet directory in Alfred Browser. If you press the Command key, it will open it in the Finder.</p>
+<p>The <strong>tp:editglobal</strong> will open the global.json file in your template directory with the default editor for JSON files.</p>
+<p>The <strong>tp:create</strong> command requires a name. A file with that name and a “txt” extension is created in the template directory and opened in the default editor for files with a “txt” extension.</p>
+<p>The <strong>tp:createclip</strong> command is the same as the <strong>tp:create</strong>, but this command takes the current clipboard contents as the text for the file. It is then opened in the default editor for “txt” files.</p>
+<p>The <strong>tp:edittemplate</strong> command will give a list of templates. When you choose one, it is opened in the default editor for a file with the “txt” extension.</p>
+<p>The <strong>tp:edittemplatedata</strong> command will give a list of templates. When you choose one, it’s corresponding JSON file is opened in the default editor for a JSON file.</p>
+<p>There are two special helper function for Handlebars defined. The helper functions given here are just the names. They have to be inside of two curly brackets to work. This is because I use the same system on my web server to expand macros. They are:</p>
 <p><strong>save &lt;name&gt; &lt;text&gt;</strong><br>This command creates a helper named “&lt;name&gt;” with the expanding text of “&lt;text&gt;”. It also places the given “&lt;text&gt;” at the point of definition. This allows you to create text snippets on the fly inside the template. Very handy.</p>
 <p><strong>clipboard</strong><br>This helper command places the current clipboard contents at the point in the template.</p>
-<p><strong>date &lt;format&gt;</strong><br>This will format the current date and time as per the format string given. See the help document that is loaded upon initialization.</p>
-<p><strong>cdate &lt;date/time&gt; &lt;format&gt;</strong><br>This takes the date/time string and formats it according to the format given.  See the help document that is loaded upon initialization.</p>
 <p>The following data expansions are defined as well:</p>
 <p><strong>cDateMDY</strong> gives the current date in Month Day, 4-digit year format</p>
 <p><strong>cDateDMY</strong> gives the current date in Day Month 4-digit Year format</p>
@@ -119,12 +124,13 @@
 <p><strong>cHMampm</strong> gives the current date in h:mm a format</p>
 <p><strong>cHMS24</strong> gives the current date in H:mm:ss 24 hour format</p>
 <p><strong>cHM24</strong> gives the current date in H:mm 24 hour format</p>
-<p>There is more to come!</p>
+<p><strong>filename</strong> gives the name of the template file. If the clipboard was expanded, then it gives nothing.</p>
+<p>Let me know if you would like other macros!</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://customct.com/alfred-quiver/index.html" data-id="cjoebi34j000vkyx5pgi1byw1" class="article-share-link">Share</a>
+      <a data-url="http://customct.com/alfred-template/index.html" data-id="cjoebi34m0010kyx5osy60r4n" class="article-share-link">Share</a>
       
       
     </footer>
