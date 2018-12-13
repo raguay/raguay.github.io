@@ -140,6 +140,49 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-12-12T05:08:05.000Z">12-12-2018</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 399 words)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/12/12/Alfred-Running-Slower/">Alfred and Hazel Running Slower</a>
+            
+        </h1>
+        <div class="content">
+            <p>I love <a href="http://www.zsh.org/" target="_blank" rel="noopener">zsh</a> and <a href="https://ohmyz.sh/" target="_blank" rel="noopener">ohmyzsh</a> for my command line. It looks great and is very flexible. But, I recently added <a href="https://github.com/zplug/zplug" target="_blank" rel="noopener">zplug</a> as well with several great plugins. I would recommend using it. But, you might want to watch out for the “gotcha” that I ran into.</p>
+<p>The zplug command runs several checks and loads several scripts each time you load a zsh instance. This does increase the startup time, but I figured that wasn’t much of an issue since I load several instances when I boot the system. I then use these shells for all my work during the day.</p>
+<p>Around the same time, I started noticing that my <a href="https://www.alfredapp.com/" target="_blank" rel="noopener">Alfred</a> workflows were getting slower. Since I have over 80 workflows and some of them call others, things were getting very slow. At first, I just thought that I was running too many other programs at a time. But, the more I experimented, the more I realized that the scripts were running slower due to the added time of loading a full zsh session.</p>
+<p>Alfred started running shell scripts with full, interactive shells instead of the minimum single execution shells. That way, the <code>.zshrc</code> file is read where many users were keeping path configurations and many programs are adding their preferences to this file as well. Without loading the <code>.zshrc</code> files, many workflows would not work.</p>
+<p>I first figured out all the necessary environment variables and made a copy of them in the <code>.bashrc</code> file. My bash files only setup a proper running environment for running programs without any fancy command line colorizations, special prompts, etc. I then went through and changed all my workflows to only use bash and not zsh. I also streamlined my <code>.zshrc</code> file by putting all configurations needed to run program in the <code>.zshenv</code> file and all the interactive shell items in the <code>.zshrc</code> file. Zsh is still somewhat slow at first run, but the added benefits of the plugins are worth it.</p>
+<p>Now, all of my Alfred workflows run much faster and I have a great interactive shell experience as well. I did the same optimizations for my <a href="https://www.keyboardmaestro.com/main/" target="_blank" rel="noopener">Keyboard Maestro</a> and <a href="https://www.noodlesoft.com/" target="_blank" rel="noopener">Hazel</a> workflows as well.</p>
+<p>I hope this tip will help you as much as it has helped me!</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2018-12-01T15:10:39.000Z">12-01-2018</time>
                 
                 
@@ -329,7 +372,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        5
                     </p>
                 </div>
             </div>
@@ -349,7 +392,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        6
+                        10
                     </p>
                 </div>
             </div>
@@ -435,7 +478,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Custom-Computer-Tools/" style="font-size: 20px;">Custom Computer Tools</a> <a href="/tags/Free/" style="font-size: 10px;">Free</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Icarus/" style="font-size: 10px;">Icarus</a> <a href="/tags/News/" style="font-size: 20px;">News</a> <a href="/tags/Web-Apps/" style="font-size: 10px;">Web Apps</a>
+        <a href="/tags/Alfred/" style="font-size: 10px;">Alfred</a> <a href="/tags/Automation/" style="font-size: 10px;">Automation</a> <a href="/tags/Custom-Computer-Tools/" style="font-size: 20px;">Custom Computer Tools</a> <a href="/tags/Free/" style="font-size: 10px;">Free</a> <a href="/tags/Hazel/" style="font-size: 10px;">Hazel</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Icarus/" style="font-size: 10px;">Icarus</a> <a href="/tags/News/" style="font-size: 20px;">News</a> <a href="/tags/Web-Apps/" style="font-size: 10px;">Web Apps</a> <a href="/tags/Workflows/" style="font-size: 10px;">Workflows</a>
     </div>
 </div>
 
@@ -449,6 +492,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2018/12/12/Alfred-Running-Slower/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Alfred and Hazel Running Slower">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-12-12T05:08:05.000Z">12-12-2018</time></div>
+                    <a href="/2018/12/12/Alfred-Running-Slower/" class="has-link-black-ter is-size-6">Alfred and Hazel Running Slower</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -544,7 +606,7 @@
                     <span class="level-item">December 2018</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -574,6 +636,28 @@
             <ul class="menu-list">
                 
                 <li>
+                    <a class="level is-marginless" href="/tags/Alfred/">
+                        <span class="level-start">
+                            <span class="level-item">Alfred</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Automation/">
+                        <span class="level-start">
+                            <span class="level-item">Automation</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
                     <a class="level is-marginless" href="/tags/Custom-Computer-Tools/">
                         <span class="level-start">
                             <span class="level-item">Custom Computer Tools</span>
@@ -588,6 +672,17 @@
                     <a class="level is-marginless" href="/tags/Free/">
                         <span class="level-start">
                             <span class="level-item">Free</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Hazel/">
+                        <span class="level-start">
+                            <span class="level-item">Hazel</span>
                         </span>
                         <span class="level-end">
                             <span class="level-item tag">1</span>
@@ -632,6 +727,17 @@
                     <a class="level is-marginless" href="/tags/Web-Apps/">
                         <span class="level-start">
                             <span class="level-item">Web Apps</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Workflows/">
+                        <span class="level-start">
+                            <span class="level-item">Workflows</span>
                         </span>
                         <span class="level-end">
                             <span class="level-item tag">1</span>
@@ -663,6 +769,25 @@
         
         <article class="media">
             
+            <a href="/2018/12/12/Alfred-Running-Slower/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Alfred and Hazel Running Slower">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-12-12T05:08:05.000Z">12-12-2018</time></div>
+                    <a href="/2018/12/12/Alfred-Running-Slower/" class="has-link-black-ter is-size-6">Alfred and Hazel Running Slower</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2018/12/01/My-New-Helper-Station/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="My New Helper-Station">
@@ -755,7 +880,7 @@
                     <span class="level-item">December 2018</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -785,6 +910,28 @@
             <ul class="menu-list">
                 
                 <li>
+                    <a class="level is-marginless" href="/tags/Alfred/">
+                        <span class="level-start">
+                            <span class="level-item">Alfred</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Automation/">
+                        <span class="level-start">
+                            <span class="level-item">Automation</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
                     <a class="level is-marginless" href="/tags/Custom-Computer-Tools/">
                         <span class="level-start">
                             <span class="level-item">Custom Computer Tools</span>
@@ -799,6 +946,17 @@
                     <a class="level is-marginless" href="/tags/Free/">
                         <span class="level-start">
                             <span class="level-item">Free</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Hazel/">
+                        <span class="level-start">
+                            <span class="level-item">Hazel</span>
                         </span>
                         <span class="level-end">
                             <span class="level-item tag">1</span>
@@ -843,6 +1001,17 @@
                     <a class="level is-marginless" href="/tags/Web-Apps/">
                         <span class="level-start">
                             <span class="level-item">Web Apps</span>
+                        </span>
+                        <span class="level-end">
+                            <span class="level-item tag">1</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="level is-marginless" href="/tags/Workflows/">
+                        <span class="level-start">
+                            <span class="level-item">Workflows</span>
                         </span>
                         <span class="level-end">
                             <span class="level-item tag">1</span>

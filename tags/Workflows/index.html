@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Archives: 2018/11 - Custom Computer Tools</title>
+<title>Tag: Workflows - Custom Computer Tools</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -11,7 +11,7 @@
 <meta name="keywords" content="freelance programming node.js JavaScript HTML CSS Mint">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Custom Computer Tools">
-<meta property="og:url" content="http://customct.com/archives/2018/11/index.html">
+<meta property="og:url" content="http://customct.com/tags/Workflows/index.html">
 <meta property="og:site_name" content="Custom Computer Tools">
 <meta property="og:description" content="The website of programming from Richard Guay.">
 <meta property="og:locale" content="en">
@@ -133,63 +133,58 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        November 2018
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-11-15T12:36:11.000Z">11-15-2018</time>
-                        <a href="/2018/11/15/AllProjectsMoved/" class="has-link-black-ter is-size-6">All Projects Moved</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-11-12T13:25:42.000Z">11-12-2018</time>
-                        <a href="/2018/11/12/movingserver/index/" class="has-link-black-ter is-size-6">Moving Servers</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-11-08T07:35:50.225Z">11-08-2018</time>
-                        <a href="/2018/11/08/hello-world/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Workflows</a></li>
+        </ul>
+        </nav>
     </div>
 </div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-12-12T05:08:05.000Z">12-12-2018</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 399 words)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/12/12/Alfred-Running-Slower/">Alfred and Hazel Running Slower</a>
+            
+        </h1>
+        <div class="content">
+            <p>I love <a href="http://www.zsh.org/" target="_blank" rel="noopener">zsh</a> and <a href="https://ohmyz.sh/" target="_blank" rel="noopener">ohmyzsh</a> for my command line. It looks great and is very flexible. But, I recently added <a href="https://github.com/zplug/zplug" target="_blank" rel="noopener">zplug</a> as well with several great plugins. I would recommend using it. But, you might want to watch out for the “gotcha” that I ran into.</p>
+<p>The zplug command runs several checks and loads several scripts each time you load a zsh instance. This does increase the startup time, but I figured that wasn’t much of an issue since I load several instances when I boot the system. I then use these shells for all my work during the day.</p>
+<p>Around the same time, I started noticing that my <a href="https://www.alfredapp.com/" target="_blank" rel="noopener">Alfred</a> workflows were getting slower. Since I have over 80 workflows and some of them call others, things were getting very slow. At first, I just thought that I was running too many other programs at a time. But, the more I experimented, the more I realized that the scripts were running slower due to the added time of loading a full zsh session.</p>
+<p>Alfred started running shell scripts with full, interactive shells instead of the minimum single execution shells. That way, the <code>.zshrc</code> file is read where many users were keeping path configurations and many programs are adding their preferences to this file as well. Without loading the <code>.zshrc</code> files, many workflows would not work.</p>
+<p>I first figured out all the necessary environment variables and made a copy of them in the <code>.bashrc</code> file. My bash files only setup a proper running environment for running programs without any fancy command line colorizations, special prompts, etc. I then went through and changed all my workflows to only use bash and not zsh. I also streamlined my <code>.zshrc</code> file by putting all configurations needed to run program in the <code>.zshenv</code> file and all the interactive shell items in the <code>.zshrc</code> file. Zsh is still somewhat slow at first run, but the added benefits of the plugins are worth it.</p>
+<p>Now, all of my Alfred workflows run much faster and I have a great interactive shell experience as well. I did the same optimizations for my <a href="https://www.keyboardmaestro.com/main/" target="_blank" rel="noopener">Keyboard Maestro</a> and <a href="https://www.noodlesoft.com/" target="_blank" rel="noopener">Hazel</a> workflows as well.</p>
+<p>I hope this tip will help you as much as it has helped me!</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
 
 
 </div>
