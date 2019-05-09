@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>automation on Custom Computer Tools</title>
+    <link>http://customct.com/categories/automation/</link>
+    <description>Recent content in automation on Custom Computer Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Dec 2018 12:08:05 +0700</lastBuildDate>
+    
+	<atom:link href="http://customct.com/categories/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alfred and Hazel Running Slower</title>
+      <link>http://customct.com/posts/alfred-running-slower/</link>
+      <pubDate>Wed, 12 Dec 2018 12:08:05 +0700</pubDate>
+      
+      <guid>http://customct.com/posts/alfred-running-slower/</guid>
+      <description>I love zsh and ohmyzsh for my command line. It looks great and is very flexible. But, I recently added zplug as well with several great plugins. I would recommend using it. But, you might want to watch out for the &amp;ldquo;gotcha&amp;rdquo; that I ran into.
+The zplug command runs several checks and loads several scripts each time you load a zsh instance. This does increase the startup time, but I figured that wasn&amp;rsquo;t much of an issue since I load several instances when I boot the system.</description>
+    </item>
+    
+    <item>
+      <title>My New Helper - Station</title>
+      <link>http://customct.com/posts/my-new-helper-station/</link>
+      <pubDate>Sun, 02 Dec 2018 12:08:05 +0700</pubDate>
+      
+      <guid>http://customct.com/posts/my-new-helper-station/</guid>
+      <description>It is hard keeping up with all the tabs in Chrome or FireFox. On an average day, I&amp;rsquo;ll have anywhere from 10 to 30 tabs open at once. Not only is it hard to find the right tab, but my system starts to slow down and sputter with the high memory usage. Therefore, I open and close many tabs to a particular website over and over.
+But, I just recently found a new friend that helps with this problem.</description>
+    </item>
+    
+  </channel>
+</rss>

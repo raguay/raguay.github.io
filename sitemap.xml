@@ -30,6 +30,64 @@
   </url>
   
   <url>
+    <loc>http://customct.com/posts/alfred-running-slower/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/categories/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/tags/hazel/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/tags/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/tags/alfred/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/categories/automation/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/tags/programming/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/tags/zsh/</loc>
+    <lastmod>2018-12-12T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/posts/my-new-helper-station/</loc>
+    <lastmod>2018-12-02T12:08:05+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/tags/station/</loc>
+    <lastmod>2018-12-02T12:08:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://customct.com/projects/bitbar/</loc>
     <lastmod>2018-11-15T18:32:06+00:00</lastmod>
   </url>
@@ -75,7 +133,24 @@
   </url>
   
   <url>
-    <loc>http://customct.com/projects/favtools/</loc>
+    <loc>http://customct.com/posts/allprojectsmoved/</loc>
+    <lastmod>2018-11-15T19:36:12+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/categories/news/</loc>
+    <lastmod>2018-11-15T19:36:12+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/tags/projects/</loc>
+    <lastmod>2018-11-15T19:36:12+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://customct.com/favtools/</loc>
     <lastmod>2018-11-12T20:20:16+00:00</lastmod>
   </url>
   
@@ -316,16 +391,6 @@
   
   <url>
     <loc>http://customct.com/about/</loc>
-  </url>
-  
-  <url>
-    <loc>http://customct.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://customct.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

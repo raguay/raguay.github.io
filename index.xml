@@ -33,6 +33,26 @@ Teacode Expand This elisp package defines the command teacode-expand which can b
     </item>
     
     <item>
+      <title>Alfred and Hazel Running Slower</title>
+      <link>http://customct.com/posts/alfred-running-slower/</link>
+      <pubDate>Wed, 12 Dec 2018 12:08:05 +0700</pubDate>
+      
+      <guid>http://customct.com/posts/alfred-running-slower/</guid>
+      <description>I love zsh and ohmyzsh for my command line. It looks great and is very flexible. But, I recently added zplug as well with several great plugins. I would recommend using it. But, you might want to watch out for the &amp;ldquo;gotcha&amp;rdquo; that I ran into.
+The zplug command runs several checks and loads several scripts each time you load a zsh instance. This does increase the startup time, but I figured that wasn&amp;rsquo;t much of an issue since I load several instances when I boot the system.</description>
+    </item>
+    
+    <item>
+      <title>My New Helper - Station</title>
+      <link>http://customct.com/posts/my-new-helper-station/</link>
+      <pubDate>Sun, 02 Dec 2018 12:08:05 +0700</pubDate>
+      
+      <guid>http://customct.com/posts/my-new-helper-station/</guid>
+      <description>It is hard keeping up with all the tabs in Chrome or FireFox. On an average day, I&amp;rsquo;ll have anywhere from 10 to 30 tabs open at once. Not only is it hard to find the right tab, but my system starts to slow down and sputter with the high memory usage. Therefore, I open and close many tabs to a particular website over and over.
+But, I just recently found a new friend that helps with this problem.</description>
+    </item>
+    
+    <item>
       <title>BitBar Scripts</title>
       <link>http://customct.com/projects/bitbar/</link>
       <pubDate>Thu, 15 Nov 2018 18:32:06 +0000</pubDate>
@@ -123,11 +143,21 @@ Scripts can be attached to any of the WordPress Actions or Filters, whether made
     </item>
     
     <item>
+      <title>All Projects Moved</title>
+      <link>http://customct.com/posts/allprojectsmoved/</link>
+      <pubDate>Thu, 15 Nov 2018 19:36:12 +0700</pubDate>
+      
+      <guid>http://customct.com/posts/allprojectsmoved/</guid>
+      <description>Well, all the project pages have been moved over to this new site. Now, I need time to add to it as not all of my projects are currently listed.
+I&amp;rsquo;m not sure about moving over my tutorials as they were never overly popular. But, I most likely will move over the ones that I personally like. If there is one you would like to make sure is moved over, just let me know.</description>
+    </item>
+    
+    <item>
       <title>Favorite Tools</title>
-      <link>http://customct.com/projects/favtools/</link>
+      <link>http://customct.com/favtools/</link>
       <pubDate>Mon, 12 Nov 2018 20:20:16 +0000</pubDate>
       
-      <guid>http://customct.com/projects/favtools/</guid>
+      <guid>http://customct.com/favtools/</guid>
       <description>Favorite Software Tools Since my site is about software tools for your computer, I thought I would share what tools I find useful and fun. Every tool on this page are tools that I use on a regular basis. Some are free, some are not. But, all of them are extremely useful tools. They are not listed in any particular order. I will be adding on to this list, so check by often!</description>
     </item>
     

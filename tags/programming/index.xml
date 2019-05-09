@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Custom Computer Tools</title>
+    <link>http://customct.com/tags/programming/</link>
+    <description>Recent content in programming on Custom Computer Tools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Dec 2018 12:08:05 +0700</lastBuildDate>
+    
+	<atom:link href="http://customct.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alfred and Hazel Running Slower</title>
+      <link>http://customct.com/posts/alfred-running-slower/</link>
+      <pubDate>Wed, 12 Dec 2018 12:08:05 +0700</pubDate>
+      
+      <guid>http://customct.com/posts/alfred-running-slower/</guid>
+      <description>I love zsh and ohmyzsh for my command line. It looks great and is very flexible. But, I recently added zplug as well with several great plugins. I would recommend using it. But, you might want to watch out for the &amp;ldquo;gotcha&amp;rdquo; that I ran into.
+The zplug command runs several checks and loads several scripts each time you load a zsh instance. This does increase the startup time, but I figured that wasn&amp;rsquo;t much of an issue since I load several instances when I boot the system.</description>
+    </item>
+    
+  </channel>
+</rss>
