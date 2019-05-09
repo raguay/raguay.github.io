@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>My First Post Using Hugo</title>
+      <link>http://customct.com/posts/my-first-post/</link>
+      <pubDate>Thu, 09 May 2019 15:34:59 +0700</pubDate>
+      
+      <guid>http://customct.com/posts/my-first-post/</guid>
+      <description>This is my first post on the Hugo site. Trying to figure it all out. So far, it has a blog section and my projects sections. I am planning to maintain and expand this site more often.
+Keep checking us out!</description>
+    </item>
+    
+    <item>
       <title>eLisp Extensions</title>
       <link>http://customct.com/projects/elisp/</link>
       <pubDate>Mon, 31 Dec 2018 08:14:45 +0000</pubDate>
