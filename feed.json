@@ -15,7 +15,7 @@
     "items": [
     {
         "id": "13",
-        "content_html": "<p>I just added a new section to my website: <a href='http://customct.com/elisp'>eLisp</a>. This section is about my eLisp extensions for Emacs.</p>",
+        "content_html": "<p>I just added a new section to my website: <a href="http://customct.com/elisp">eLisp</a>. This section is about my eLisp extensions for Emacs.</p>",
         "url": "http://customct.com",
         "date_published": "2018-12-31T08:40:00+07:00"
     },

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Custom Computer Tools  | Quiver Workflow</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Quiver Workflow" />
+<meta property="og:description" content="This workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it.
+Once Node.js is installed, go to your Quiver Library file in Alfred Browser and select the “Set Quiver Library” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://customct.com/projects/alfredp/alfredquiver/" />
+<meta property="article:published_time" content="2018-11-12T12:55:32&#43;00:00"/>
+<meta property="article:modified_time" content="2018-11-12T12:55:32&#43;00:00"/>
+
+<meta itemprop="name" content="Quiver Workflow">
+<meta itemprop="description" content="This workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it.
+Once Node.js is installed, go to your Quiver Library file in Alfred Browser and select the “Set Quiver Library” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults.">
+
+
+<meta itemprop="datePublished" content="2018-11-12T12:55:32&#43;00:00" />
+<meta itemprop="dateModified" content="2018-11-12T12:55:32&#43;00:00" />
+<meta itemprop="wordCount" content="513">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Quiver Workflow"/>
+<meta name="twitter:description" content="This workflow allows you to create templates with Handlebar syntax inside of the Quiver program. To use the workflow, you have to have Node.js installed first. I recommend using Homebrew to install it.
+Once Node.js is installed, go to your Quiver Library file in Alfred Browser and select the “Set Quiver Library” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://customct.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Custom Computer Tools
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        PROJECTS
+      </p>
+      <h1 class="f1 athelas mb1">Quiver Workflow</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-11-12T12:55:32Z">November 12, 2018</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This workflow allows you to create templates with Handlebar syntax inside of the <strong><a href="http://happenapps.com/#quiver">Quiver</a></strong> program. To use the workflow, you have to have Node.js installed first. I recommend using <strong><a href="http://brew.io">Homebrew</a></strong> to install it.</p>
+
+<p>Once <strong>Node.js</strong> is installed, go to your Quiver Library file in Alfred Browser and select the “<strong>Set Quiver Library</strong>” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults. The Defaults note has to have one code block set to JSON and the defaults for the Handlebar expansions set. The rest of the notes will be templates.</p>
+
+<p>When you run “<strong>qt:expand</strong>” or “<strong>qt:exptext</strong>”, it will list all of your template files in the Snippets notebook. When you select one, it will be expanded with any json cell the note and the Defaults json note data. The “<strong>qt:expand</strong>” will put the result into your clipboard and the topmost application. The “<strong>qt:exptext</strong>” will give it to TextExpander to expand and place in the topmost application. With the “<strong>qt:exptext</strong>” command, TextExpander will also expand any of it’s macros in the template file. I mostly use it for placing the cursor after expansion. These two commands also have an associated Alfred Browser File action.</p>
+
+<p>There are four special helper function for Handlebars defined. These functions should be placed inside double or triple brackets. They are:</p>
+
+<p><strong>save &lt;name&gt; &lt;text&gt;</strong>
+This command creates a helper named “&lt;name&gt;” with the expanding text of “&lt;text&gt;”. It also places the given “&lt;text&gt;” at the point of definition. This allows you to create text snippets on the fly inside the template. Very handy.</p>
+
+<p><strong>clipboard</strong>
+This helper command places the current clipboard contents at the point in the template.</p>
+
+<p><strong>date &lt;format&gt;</strong>
+This will format the current date and time as per the format string given. See the help document that is loaded upon initialization.</p>
+
+<p><strong>cdate &lt;date/time&gt; &lt;format&gt;</strong>
+This takes the date/time string and formats it according to the format given.  See the help document that is loaded upon initialization.</p>
+
+<p>The following data expansions are defined as well:</p>
+
+<p><strong>cDateMDY</strong> gives the current date in Month Day, 4-digit year format</p>
+
+<p><strong>cDateDMY</strong> gives the current date in Day Month 4-digit Year format</p>
+
+<p><strong>cDateDOWDMY</strong> gives the current date in Day of Week, Day Month 4-digit year format</p>
+
+<p><strong>cDateDOWMDY</strong> gives the current date in Day of Week Month Day, 4-digit year format</p>
+
+<p><strong>cDay</strong> gives the current date in Day format</p>
+
+<p><strong>cMonth</strong> gives the current date in Month format</p>
+
+<p><strong>cYear</strong> gives the current date in 4-digit year format</p>
+
+<p><strong>cMonthShort</strong> gives the current date in Short Month name format</p>
+
+<p><strong>cYearShort</strong> gives the current date in 2-digit year format</p>
+
+<p><strong>cDOW</strong> gives the current date in Day of Week format</p>
+
+<p><strong>cMDthYShort</strong> gives the current date in Month day 2-digit year format</p>
+
+<p><strong>cMDthY</strong> gives the current date in Month Day 4-digit year format</p>
+
+<p><strong>cHMSampm</strong> gives the current date in h:mm:ss a format</p>
+
+<p><strong>cHMampm</strong> gives the current date in h:mm a format</p>
+
+<p><strong>cHMS24</strong> gives the current date in H:mm:ss 24 hour format</p>
+
+<p><strong>cHM24</strong> gives the current date in H:mm 24 hour format</p>
+
+<p>There is more to come!</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://customct.com/" >
+    &copy; 2019 Custom Computer Tools
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

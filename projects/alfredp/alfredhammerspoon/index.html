@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Custom Computer Tools  | Hammerspoon Workflow</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Hammerspoon Workflow" />
+<meta property="og:description" content="This is a direct port of my Mjolnir Workflow.
+This workflow is for running scripts using Hammerspoon to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Hammerspoon.
+First off, download Hammerspoon from https://github.com/Hammerspoon/hammerspoon/releases/latest. Once installed, reload Hammerspoon and run the &ldquo;hs:install&rdquo; to set the configuration file this workflow expects. After that, everything should just work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://customct.com/projects/alfredp/alfredhammerspoon/" />
+<meta property="article:published_time" content="2018-11-12T14:52:10&#43;00:00"/>
+<meta property="article:modified_time" content="2018-11-12T14:52:10&#43;00:00"/>
+
+<meta itemprop="name" content="Hammerspoon Workflow">
+<meta itemprop="description" content="This is a direct port of my Mjolnir Workflow.
+This workflow is for running scripts using Hammerspoon to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Hammerspoon.
+First off, download Hammerspoon from https://github.com/Hammerspoon/hammerspoon/releases/latest. Once installed, reload Hammerspoon and run the &ldquo;hs:install&rdquo; to set the configuration file this workflow expects. After that, everything should just work.">
+
+
+<meta itemprop="datePublished" content="2018-11-12T14:52:10&#43;00:00" />
+<meta itemprop="dateModified" content="2018-11-12T14:52:10&#43;00:00" />
+<meta itemprop="wordCount" content="569">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hammerspoon Workflow"/>
+<meta name="twitter:description" content="This is a direct port of my Mjolnir Workflow.
+This workflow is for running scripts using Hammerspoon to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Hammerspoon.
+First off, download Hammerspoon from https://github.com/Hammerspoon/hammerspoon/releases/latest. Once installed, reload Hammerspoon and run the &ldquo;hs:install&rdquo; to set the configuration file this workflow expects. After that, everything should just work."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://customct.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Custom Computer Tools
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        PROJECTS
+      </p>
+      <h1 class="f1 athelas mb1">Hammerspoon Workflow</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-11-12T14:52:10Z">November 12, 2018</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This is a direct port of my Mjolnir Workflow.</p>
+
+<p>This workflow is for running scripts using Hammerspoon to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Hammerspoon.</p>
+
+<p>First off, download Hammerspoon from <a href="https://github.com/Hammerspoon/hammerspoon/releases/latest">https://github.com/Hammerspoon/hammerspoon/releases/latest</a>.  Once installed, reload Hammerspoon and run the &ldquo;hs:install&rdquo; to set the configuration file this workflow expects. After that, everything should just work.</p>
+
+<p><strong>hs:install</strong></p>
+
+<p>Configure Hammerspoon with the configuration file that this workflow needs. The original is backed up into the users home directory as hs.orig.</p>
+
+<p><strong>hs:reload</strong></p>
+
+<p>This tells Hammerspoon to reload the configuration file.</p>
+
+<p><strong>hs:open</strong></p>
+
+<p>This opens the Hammerspoon console to the foreground.</p>
+
+<p><strong>hs:nup</strong></p>
+
+<p>This nudges the current window up.</p>
+
+<p><strong>hs:ndown</strong></p>
+
+<p>This nudges the current window down.</p>
+
+<p><strong>hs:nleft</strong></p>
+
+<p>This nudges the current window to the left.</p>
+
+<p><strong>hs:nright</strong></p>
+
+<p>This nudges the current window to the right.</p>
+
+<p><strong>hs:tcaff</strong></p>
+
+<p>This toggles system caffenate.</p>
+
+<p><strong>hs:leftthirds</strong></p>
+
+<p>This moves the current window to the left <sup>1</sup>&frasl;<sub>3</sub> of the screen.</p>
+
+<p><strong>hs:rightthirds</strong></p>
+
+<p>This moves the current window to the right <sup>2</sup>&frasl;<sub>3</sub> of the screen.</p>
+
+<p><strong>hs:lefthalf</strong></p>
+
+<p>This moves the current window to the left half of the screen.</p>
+
+<p><strong>hs:righthalf</strong></p>
+
+<p>This moves the current window to the right half of the screen.</p>
+
+<p><strong>hs:tophalf</strong>
+This moves the current window to the top half of the screen.</p>
+
+<p><strong>hs:bottomhalf</strong>
+This moves the current window to the bottom half of the screen.</p>
+
+<p><strong>hs:fullScreen</strong>
+This moves the window to the maximum size on the screen.</p>
+
+<p><strong>hs:minimize</strong>
+This minimizes the current window.</p>
+
+<p><strong>hs:tzoom</strong>
+This toggles the system fullscreen on and off for the current window. This moves the window to it&rsquo;s own space taking up the entire screen.</p>
+
+<p><strong>hs:running</strong>
+This will list all the running apps. You can then just select one to bring it to the front, select with alt key to hide it, select with ctrl key to unhide it, and select with the fn key to close the application.</p>
+
+<p><strong>hs:snap</strong></p>
+
+<p>This snaps the current window to the closes grid box area.</p>
+
+<p><strong>hs:setgrid</strong></p>
+
+<p>This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do &ldquo;hs:setgrid 0, 0, 1, 1&rdquo;. There is also a hotkey set to this value as an example.</p>
+
+<p><strong>hs:command</strong></p>
+
+<p>Type in a command string and it will be sent to Hammerspoon directly!</p>
+
+<p>There is also an external trigger HammerspoonCommand that will pass whatever is sent in the trigger to Hammerspoon using the command processor as in &ldquo;hs:command&rdquo;. This gives other workflows or scripts the ability to interact with Hammerspoon through Alfred.</p>
+
+<p><strong>hs:expose</strong></p>
+
+<p>This will list all applications. When an application is selected, it will show all of it&rsquo;s windows in a matrix on the screen and ask the user for the coordinates of the one to show. It will then put all the windows back to their original position and bring the one selected to the foreground. If the application has only one window, it will simply bring it to the front.</p>
+
+<p>I also created a hotkey for doing Expose on FoldingText. The user can create more in the same manner. Just be careful to get the name of the application correct!</p>
+
+<p><strong>hs:last</strong></p>
+
+<p>This command undoes the very last window move. This assumes all window movements were done with Hammerspoon and this workflow functions.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://customct.com/" >
+    &copy; 2019 Custom Computer Tools
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
