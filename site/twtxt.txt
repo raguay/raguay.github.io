@@ -1,5 +1,0 @@
-2016-02-08T10:52:50+07:00	Testing my microblogger.
-2016-02-08T12:21:21+07:00	testing from my Expandrive setup.
-2016-02-08T12:56:03+07:00	Testing the server...
-2016-02-08T13:57:56+07:00	A new test
-2016-02-08T14:06:52+07:00	I have mine update to the server directly with Expandrive for Mac!
