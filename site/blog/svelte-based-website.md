@@ -1,6 +1,6 @@
 ---
 title: "Now Using a Svelte Powered Website on GitHub"
-date: "2019-10-29"
+date: "2019-29-10"
 ---
 
 ## {{title}}
