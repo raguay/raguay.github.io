@@ -23,15 +23,31 @@ Here are some of my favorite tools on the Mac. I use these about everyday.
 
     You can check my tutorial on writing custom extensions for [fman on Tuts+](https://computers.tutsplus.com/tutorials/fman-the-extendable-file-manager-for-any-system--cms-28340). You can see a list of all my extensions [here](/#/projects/fman).
 
-- [Sublime Text 3](http://www.sublimetext.com/3)
+- [Oni2](https://v2.onivim.io/)
 
-    This is the best text editor by far! I use it for programming, markdown text creation for the web site, and any small text editing job. It is available on Windows, OSX, and Linux. It is a must have tool!
-
-
-- [Alfred 3](http://alfredapp.com)
+  When the news of Sublime Text 3 full version upgrade when released (11/1/2019 - Still
+  a beta program) would cost $75, I decided I needed to move back to Emacs. But, Emacs
+  opens very slowing at times. I was also moving to the Vim editing style. While
+  looking for a good Vim editor, I came across Oni and loved it. But, Oni kept crashing
+  all the time. Then came Oni2. It's still in Alpha state, but I'm using it all the time
+  and loving it. I'm really missing [Emmet](https://emmet.io/) functionality, but that will be coming soon.
+  Right now, Oni2 is my main editor and it is fast!
+  
+- [Alfred 4](http://alfredapp.com)
 
     This great little program saves me many hours of time and keystrokes. It is a program launcher, file system explorer, hotkey runner, text expander, clipboard history manager, itunes controller, ...  There is no end to how you can use this program to help you use your computer. It is easily expanded using workflows. You can check out some of my [workflows](/#/projects/alfred)!
 
+- [Bitbar](https://getbitbar.com/)
+
+  This is a free program to put the output of scripts into your menubar. It works great, but hasn't had an update since
+  August of 2016. Therefore, it is most likely dead, but still usable. It will not run on Catalina. My personal scripts
+  and tutorials are found on my [Bitbar page](/#/projects/bitbar).
+
+- [TextBar](http://richsomerfield.com/apps/textbar/)
+
+  TextBar is a for pay version of Bitbar. The mechanics are quit different and TextBar has a html render mode that
+  Bitbar doesn't have. You can find my scripts for [Textbar here](/#/projects/textbar).
+  
 
 - [MaxSnap](https://a.paddle.com/click?said=426&aaid=1133&link_id=229&chk=93fb9c86ac7786bfa6928b4f5c4ddf91&redir=aHR0cDovL3d3dy5ub3RlaWZ5YXBwLmNvbS9tYXhzbmFwLXdpbmRvd3MtbWFuYWdlci1mb3ItbWFjLw==)
 
@@ -48,7 +64,6 @@ Here are some of my favorite tools on the Mac. I use these about everyday.
 - [Dropzone](http://aptonic.com/)
 
     If you do not have Dropzone, I would recommend it. It has many pre-programmed destinations to process files and text. But, if you can not find what you need, you can easily write your own in Ruby! For a person that loves to program, this tool is very fun!
-
 
     Read my tutorial on [Writing Dropzone 3 Actions](http://computers.tutsplus.com/tutorials/writing-dropzone-3-actions--cms-21590)
 
@@ -68,21 +83,18 @@ Here are some of my favorite tools on the Mac. I use these about everyday.
 
     This free utility for setting default programs to almost any protocal in the Mac OS.
 
-- [Camtasia](http://www.techsmith.com/camtasia.html)
-
-    This is a very good video editing software. I use it for saving frames for the video cover picture and to compress videos. This program works best with mov files.
-
 - [Screenflow](http://www.telestream.net/screenflow/overview.htm)
 
     This program is similar to Camtasia above, but works best at making mp4 files. Since my job has standardized mostly on mp4, this is my main video editing software.
 
-- [Transmit](http://panic.com/transmit/)
+- Yummy FTP
 
-    This is a great S3 upload, download client.
+  This was my choice program, but it is dead now because the author died. He was the lone developer and not a real
+  company. It will be sorely missed as it doesn't work on Catalina.
 
 - [CyberDuck](http://cyberduck.ch/)
 
-    This is the same as Transmit, but it is free and on Windows as well.
+    This a great FTP, SFTP client that is free and on Windows as well.
 
 - [MediaInfo](http://mediainfo.sourceforge.net/en)
 
@@ -115,6 +127,12 @@ Here are some of my favorite tools on the Mac. I use these about everyday.
 - [ShortCat](http://shortcatapp.com/)
     
     This utility makes almost everything on the screen keyboard accessable. You definitely need this in your toolbox.
+
+- [Affinity Photo, Designer, and Publisher](https://affinity.serif.com/en-us/)
+
+  These are my goto programs for working with graphics and publishing needs. They are fast, dependable, and fully
+  compatable with similar Adobe products (file formats. Plugins are not fully compatable, but many do work). Also, these
+  will not break your bank! All are available for Windows as well.
 
 ### Microsoft Windows
 
