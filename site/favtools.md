@@ -38,9 +38,11 @@ Here are some of my favorite tools on the Mac. I use these about everyday.
     Controling the large number of windows open can sometimes really be hard. I use MaxSnap to make it easier. My favorite feature is the moving and resizing windows with the mouse.
 
 - [Growly Notes](http://growlybird.com/notes/index.html)
+
     This program comes the closest to giving the Mac community the flexibility and utility of Microsoft Office Onenote. I use it to store facts and to organism anything that I write. Being a free program, anyone can use it. But, if you find it useful, please give a donation for the continued development of the program.
 
 - [DEVONthink Pro](http://www.devontechnologies.com/products/devonthink/overview.html)
+    
     I just recently started using this powerful program. It would best be called a thought management system for the Mac. It allows the tagging and linking of files or database entries in the program for intelligently managing them. It uses AppleScript for it's scripting language and give very helpful tools to make the scripts accessable all the time. You can quickly jot notes and throw it into the inbox for filing latter. With the Alfred workflows for it, you can very quickly jot a note to be more fully developed later. It is also an excellent web site bookmarker/archiver. Searching all the content is quick and easy.
 
 - [Dropzone](http://aptonic.com/)
@@ -107,9 +109,11 @@ Here are some of my favorite tools on the Mac. I use these about everyday.
     This utility program has saved me a lot of hand moving around time. It gives a very handy, programmable popup for copying the current selection (or a lot of other things).
 
 - [Grisbi](http://www.grisbi.org/)
+    
     This is an excellent, personal money management software for Windows, Mac OSx and Linux.
 
 - [ShortCat](http://shortcatapp.com/)
+    
     This utility makes almost everything on the screen keyboard accessable. You definitely need this in your toolbox.
 
 ### Microsoft Windows
