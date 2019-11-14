@@ -158,3 +158,4 @@ Here are some of the tools I use on Windows. Many of the tools I use on macOS is
 
 I would list the programs I use on Linux, but I would just be repeating myself! Everything has been covered above. There is really nothing that is Linux only that I use. Maybe someone can suggest some!
 
+{{> 'donate.html'}}

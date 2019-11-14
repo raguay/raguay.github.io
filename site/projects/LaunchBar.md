@@ -120,4 +120,4 @@ This action is triggered with **ft-inbox**. It allows you to type any text and h
 
 - [Creating LaunchBar 6 Actions](http://computers.tutsplus.com/tutorials/creating-launchbar-6-actions--cms-22733)
 
-
+{{> 'donate.html'}}

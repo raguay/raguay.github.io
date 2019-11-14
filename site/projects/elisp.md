@@ -20,3 +20,5 @@ This elisp package defines the command `teacode-expand` which can be assigned to
 Once assigned, pressing the hotkey will take the current line, pass it and the extension of the file associated to the buffer, and send it to the [TeaCode](https://www.apptorium.com/teacode). TeaCode will find an expansion for it and return the results which is then pasted back in place.
 
 The GitHub page tells how to add it to your Emacs config. Enjoy!
+
+{{> 'donate.html'}}

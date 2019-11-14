@@ -33,4 +33,4 @@ I have also written an article on writing cleaners for Mac Tuts+. It is called:
 - [How to Effortlessly Create Markdown With TextSoap](http://computers.tutsplus.com/tutorials/how-to-effortlessly-create-markdown-with-textsoap--mac-55744)
    This is a complicated cleaner that takes markdown text, translates it to HTML, and fixes it up to work in a WordPress page post.
 
-
+{{> 'donate.html'}}

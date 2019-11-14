@@ -98,4 +98,4 @@ I have also written an article on writing FoldingText extensions for Computer Tu
 
 - [**Customizing FoldingText**](http://goo.gl/M8MBWX)
 
-
+{{> 'donate.html'}}

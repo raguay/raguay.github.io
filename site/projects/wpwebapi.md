@@ -29,4 +29,4 @@ With the Web API plugin, you no longer have to do that. This plugin creates a cu
 
 This is avaiable on my GitHub accout. [Check it out!](https://github.com/raguay/cct_api)
 
-
+{{> 'donate.html'}}

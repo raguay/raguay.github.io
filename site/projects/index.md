@@ -1,5 +1,7 @@
-
-## Projects
+---
+title: "My Projects"
+---
+## {{title}}
 
 Here are my current projects:
 

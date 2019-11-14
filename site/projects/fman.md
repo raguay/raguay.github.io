@@ -71,3 +71,4 @@ Here are the ones I've created so far:
 
     This extension zips all the selected files using the current directory as the name for the zip.
 
+{{> 'donate.html'}}

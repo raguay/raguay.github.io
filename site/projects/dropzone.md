@@ -22,4 +22,4 @@ I have also written an article on writing destinations for Mac Tuts+. It is call
 - [Writing DropZone Destinations](http://computers.tutsplus.com/tutorials/writing-destinations-for-dropzone--mac-61180)
 - [Writing Dropzone 3 Actions](http://computers.tutsplus.com/tutorials/writing-dropzone-3-actions--cms-21590)
 
-
+{{> 'donate.html'}}

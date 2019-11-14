@@ -27,3 +27,4 @@ This is the current editor being used by the plugin. It will contain either `sub
 
 I describe this plugin in detail in my [tutorial on Bitbar](https://computers.tutsplus.com/tutorials/customize-the-menu-bar-with-bitbar--cms-26946). The tutorial has a download for the Alfred BitBar workflow as well.
 
+{{> 'donate.html'}}

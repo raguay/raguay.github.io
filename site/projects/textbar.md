@@ -149,3 +149,5 @@ You can access the following libraries also: `NP.moment` for [moment.js library]
 - Re-factored to use the [CodeMirror](https://codemirror.net) editor instead of a plain textarea.
 - The script menu now has a focused input to narrow down the list with text given. Then you can use the up and down arrow keys to select the script you want to use.
 - You can now write a script in a note, switch to another not and select some text, and run the 'Evaluate Note # as a Script' where # is 1-5. The selected text is in `NP.text`. You can access the following libraries also: `NP.moment` for moment.js library, `NP.mathjs` for the math.js library, and `NP.jQuery` for the jQuery.js library. These things can change as I work to make this a better program.
+
+{{> 'donate.html'}}

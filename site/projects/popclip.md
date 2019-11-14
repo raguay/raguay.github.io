@@ -24,4 +24,4 @@ I have also written an article on writing destinations for Mac Tuts+. It is call
 
 - [PopClip: Scripting Extensions](http://computers.tutsplus.com/tutorials/popclip-scripting-extensions--mac-55842) - Using PHP to write an extension for looking up Bible references.
 
-
+{{> 'donate.html'}}

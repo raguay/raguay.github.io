@@ -46,4 +46,4 @@ You can download the plugin from my [GitHub repository](https://github.com/ragua
 
 
 
-
+{{> 'donate.html'}}
