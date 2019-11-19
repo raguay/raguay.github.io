@@ -4,6 +4,13 @@ date: 2018-11-12 20:20:16
 menu: "Favorites"
 ---
 
+### Favorite Frameworks
+
+- [Svelte](https://svelte.dev/) is my preferred framework to use for making web based sites or programs. I 
+have created many web based tools using [NW.js](https://nwjs.io/) and the Svelte framework. It is also the 
+framework that is running this website. You can use my template project, [Svelte GitHub Site Template](https://github.com/raguay/SvelteGithubSiteTemplate)
+to build your own.
+
 ### Favorite Software Tools
 
 
