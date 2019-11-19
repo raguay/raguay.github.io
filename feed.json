@@ -14,6 +14,12 @@
     },
     "items": [
     {
+        "id": "14",
+        "content_html": "<p>I've totally redid my website using <a href='https://svelte.dev/'>Svelte</a>. You can see the changes at <a href='http://customct.com'>Custom Computer Tools</a>. You can create your own using my template <a href='https://github.com/raguay/SvelteGithubSiteTemplate'>Svelte GitHub Website Template</a>.</p>",
+        "url": "http://customct.com",
+        "date_published": "2019-11-19T08:40:00+07:00"
+    },
+    {
         "id": "13",
         "content_html": "<p>I just added a new section to my website: <a href='http://customct.com/elisp'>eLisp</a>. This section is about my eLisp extensions for Emacs.</p>",
         "url": "http://customct.com",
