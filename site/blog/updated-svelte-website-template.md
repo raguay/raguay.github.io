@@ -18,6 +18,9 @@ The styling for the site has been moved to the info store. Now, to change the co
 info store and make the changes. This also means that styling can now be programmically changed (remove the sidebar, 
 show the sidebar on the left or right, etc.). This gives the framework much more flexibility.
 
+I also modularized more of the site components so that the user doesn't have to edit the main page at all. This
+should make adapting to other uses much easier.
+
 I also just updated the [Favorite Tools](/#/favtools) page to list frameworks as well. Of course, I listed [Svelte](https://svelte.dev/) 
 as my main framework to use! If you haven't tried it yet, you should. 
 
