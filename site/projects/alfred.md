@@ -93,5 +93,6 @@ I have also written a series of articles on using Alfred for Mac Tuts+. They are
 * [Alfred 3 Explained - Part 1](https://computers.tutsplus.com/tutorials/alfred-3-whats-new--cms-26726)
 * [Alfred 3 Explained - Part 2](https://computers.tutsplus.com/tutorials/cms-26734--cms-26734)
 * [A Beginners Guide to JavaScript Application Scripting](https://computers.tutsplus.com/tutorials/a-beginners-guide-to-javascript-application-scripting-jxa--cms-27171)
+* [Exploring Alfred's Latest Features](http://computers.tutsplus.com/tutorials/exploring-alfreds-latest-features--cms-27910)
 
 {{> 'donate.html'}}
