@@ -290,7 +290,10 @@ export const info = writable({
     font: '20px Times New Romand, Arial',
     headerFont: '20px Verdana, Arial',
     showSideBar: true,
-    sideBarLeft: false
+    sideBarLeft: false,
+    widthLogo: 920,
+    widthNavbar: 700,
+    widthSidebar: 900
   }
 });
 ```
@@ -338,6 +341,14 @@ explanitory as they are named similar to the CSS properties. If the `showSideBar
 true, the side bar will be visible on the left side if `sideBarLeft` is true. It'll be on the right
 if `sideBarLeft` is false. If `showSideBar` is false, then no side bars will be shown and the content
 area will take the full with under the header.
+
+There are three variables in the `styles` object that control responsive design feature. 
+They are `widthLogo`, `widthNavbar`, and `widthSidebar`. The `widthLogo` variable is the pixel 
+size that the logo will stop being displayed. The `widthNavbar` variable is the width that 
+the navigation menu will go from horizontal to vertical. The `widthSidebar` variable is the 
+width that the sidebar will no longer be displayed at. You can set these to values 
+that makes sense for your site. A very short menu will not need as large of 
+a value as a short menu will.
 
 These variables can be set programmically as well. That way, you can setup pages with the side bar or
 without. You could also set all the styling information from a menu entry to have different styles
