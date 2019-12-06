@@ -1,5 +1,5 @@
 ---
-date: 2019-11-26
+date: 2019-12-06
 title: Using the Svelte GitHub Website Template
 ---
 
@@ -268,7 +268,7 @@ data on the page for use further in the page and isn't a time based function.
 All basic site information is kept in a Svelte store. Any component can access this information. The following is the baics found in the store:
 
 <hr />
-```JavaScript
+```javascript
 import { writable } from 'svelte/store';
 
 export const info = writable({
@@ -387,7 +387,7 @@ you have to use the `get` function to get it from the store. The store variable 
 actual store, but accessor function to it. You get the `get` funtion this way:
 
 <hr />
-```JavaScript
+```javascript
   import { get } from 'svelte/store';
 ```
 <hr />
@@ -395,7 +395,7 @@ actual store, but accessor function to it. You get the `get` funtion this way:
 You then use that function to get the most current value of the store. For example:
 
 <hr />
-```JavaScript
+```javascript
   var localvalue = get(info);
 ```
 <hr />
@@ -409,7 +409,7 @@ the new value is different (ie: 1 instead of 0). But for structures, this might 
 The main menu on the website is in the `NavBar.svelte` component. It looks like this:
 
 <hr />
-```JavaScript
+```html
 <div id='navbar' style="background-color: {styles.divColor};
                         background-image: {styles.divbackgroundPicture};
                         border: {styles.borderSize} solid {styles.borderColor};
