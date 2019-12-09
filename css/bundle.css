@@ -3,10 +3,10 @@ body{display:flex;flex-direction:column;margin:0px;padding:0px}a.active{color:#1
 .box.svelte-scql2x{width:100%;margin:auto;padding:10px;margin-top:10px;margin-bottom:10px}.box.svelte-scql2x{width:100%;margin:auto;padding:10px;margin-top:10px;margin-bottom:10px}
 content.svelte-2f583i{margin:10px 0px;padding:10px;flex-shrink:1}#waiting.svelte-2f583i{height:100%;width:100%;min-height:200px;margin:auto}
 svg.svelte-1fn6wgv{margin:auto;flex-shrink:0;width:150px;height:100px}
-footer.svelte-ohvpwj{width:85%;margin:auto;padding:10px}#leftBox.svelte-ohvpwj{float:left;display:flex;flex-direction:column}#leftBox.svelte-ohvpwj p.svelte-ohvpwj{margin:0px;padding:0px}
 #sidebar.svelte-1l2bqy{width:30%;padding:10px;margin-top:10px;margin-bottom:10px}
+footer.svelte-ohvpwj{width:85%;margin:auto;padding:10px}#leftBox.svelte-ohvpwj{float:left;display:flex;flex-direction:column}#leftBox.svelte-ohvpwj p.svelte-ohvpwj{margin:0px;padding:0px}
 .navItem.svelte-7fft5f{color:black;text-decoration:none}#navbar.svelte-7fft5f{display:flex;width:85%;margin:auto;border-radius:10px;padding:10px;margin-top:10px;margin-bottom:10px}#navbar.svelte-7fft5f a.svelte-7fft5f{text-decoration:none;font-size:24px}.navItem.svelte-7fft5f:hover{color:blue}.navItem.svelte-7fft5f{margin-right:26px;text-decoration:none}
-#dropdown.svelte-vy4ho9{display:flex;flex-direction:column;height:24px;color:black;overflow:hidden}#dropdown.svelte-vy4ho9 a.svelte-vy4ho9:first-child{margin-bottom:10px;color:black;text-decoration:none;font-size:24px}#dropdown.svelte-vy4ho9 a.svelte-vy4ho9{color:black;text-decoration:none;font-size:24px}#dropdown.svelte-vy4ho9:hover{height:100%}#dropdown.svelte-vy4ho9 a.svelte-vy4ho9:hover{color:blue}
 #blog.svelte-12waaog{display:flex;flex-direction:column;align-items:left;align-content:left;margin:10px 0px 10px 0px}#blog.svelte-12waaog h4.svelte-12waaog{margin:auto;padding:5px 0px 10px 0px}#blog.svelte-12waaog a.svelte-12waaog{text-decoration:none}
+#dropdown.svelte-vy4ho9{display:flex;flex-direction:column;height:24px;color:black;overflow:hidden}#dropdown.svelte-vy4ho9 a.svelte-vy4ho9:first-child{margin-bottom:10px;color:black;text-decoration:none;font-size:24px}#dropdown.svelte-vy4ho9 a.svelte-vy4ho9{color:black;text-decoration:none;font-size:24px}#dropdown.svelte-vy4ho9:hover{height:100%}#dropdown.svelte-vy4ho9 a.svelte-vy4ho9:hover{color:blue}
 
 /*# sourceMappingURL=bundle.css.map */
