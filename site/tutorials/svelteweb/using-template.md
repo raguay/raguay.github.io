@@ -7,9 +7,9 @@ title: Using the Svelte GitHub Website Template
 
 #### {{cdate date 'MMMM D, YYYY'}}
 
-Many want to run a simple blog or a small website without spending a whole lot of
-money. They often believe they have to sacrifice speed and flexibility to get it
-going cheap enough for them. But, the truth is, you can create a website for free!
+Many want to run a simple blog or a small website without spending a whole lot of money. They often believe 
+they have to sacrifice speed and flexibility to get it going cheap enough for them. But, the truth is, you
+can create a website for free!
 
 This tutorial will show you how you can create your own website with simple
 markdown files and a [GitHub Pages](https://pages.github.com/) account. You are
@@ -72,47 +72,47 @@ graphical tree structure):
 
 ```bash
  $ tree
-├── LICENSE
-├── README.md
-├── launch
-│  ├── README.md
-│  ├── css
-│  │  └── bundle.css
-│  ├── index.html
-│  └── js
-│      └── bundle.js
-├── maskfile.md
-├── package.json
-├── public
-│  ├── CNAME
-│  ├── bundle.css
-│  ├── bundle.css.map
-│  ├── bundle.js
-│  ├── bundle.js.map
-│  ├── index.html
-│  └── site
-│      ├── 404.md
-│      ├── blog
-│      │  ├── index.md
-│      │  └── my-first-post.md
-│      └── parts
-│          └── test.html
-├── rollup.config.js
-└── src
-    ├── WebSite.svelte
-    ├── components
-    │  ├── About.svexy
-    │  ├── BlogPosts.svelte
-    │  ├── Footer.svelte
-    │  ├── Index.svexy
-    │  ├── Logo.svelte
-    │  ├── NavBar.svelte
-    │  ├── Page.svelte
-    │  ├── Sidebar.svelte
-    │  └── Twitter.svelte
-    ├── main.js
-    └── store
-        └── infoStore.js
+├─þX─þX LICENSE
+├─þX─þX README.md
+├─þX─þX launch
+│  ├─þX─þX README.md
+│  ├─þX─þX css
+│  │  └─þX─þX bundle.css
+│  ├─þX─þX index.html
+│  └─þX─þX js
+│      └─þX─þX bundle.js
+├─þX─þX maskfile.md
+├─þX─þX package.json
+├─þX─þX public
+│  ├─þX─þX CNAME
+│  ├─þX─þX bundle.css
+│  ├─þX─þX bundle.css.map
+│  ├─þX─þX bundle.js
+│  ├─þX─þX bundle.js.map
+│  ├─þX─þX index.html
+│  └─þX─þX site
+│      ├─þX─þX 404.md
+│      ├─þX─þX blog
+│      │  ├─þX─þX index.md
+│      │  └─þX─þX my-first-post.md
+│      └─þX─þX parts
+│          └─þX─þX test.html
+├─þX─þX rollup.config.js
+└─þX─þX src
+    ├─þX─þX WebSite.svelte
+    ├─þX─þX components
+    │  ├─þX─þX About.svexy
+    │  ├─þX─þX BlogPosts.svelte
+    │  ├─þX─þX Footer.svelte
+    │  ├─þX─þX Index.svexy
+    │  ├─þX─þX Logo.svelte
+    │  ├─þX─þX NavBar.svelte
+    │  ├─þX─þX Page.svelte
+    │  ├─þX─þX Sidebar.svelte
+    │  └─þX─þX Twitter.svelte
+    ├─þX─þX main.js
+    └─þX─þX store
+        └─þX─þX infoStore.js
 
 10 directories, 31 files
 ```
@@ -198,8 +198,8 @@ This is a markdown file with information about you. Change as
 you see fit.
 
 The `div` setup the proper styling for the markdown and controls
-the animation of it on the site. Thereore, leave the div information
-as it is and just change the markdown inbetween.
+the animation of it on the site. Therefore, leave the div information
+as it is and just change the markdown in between.
 ```
 
 &lt;/div&gt;
@@ -225,7 +225,7 @@ be processed and sent to the viewer. This file is actually preloaded when the pa
 see how to load partials in the next section.
 
 These markdown files are limited to plain markdown, any registered Handlebars helpers, and everything that is in the YAML header
-is avaliable as a Handelbar helper. Here are a list of helpers I've added to the template:
+is available as a Handlebar helper. Here are a list of helpers I've added to the template:
 
 | Helper | Description |
 | --- | --------- |
@@ -265,7 +265,7 @@ data on the page for use further in the page and isn't a time based function.
 
 ## Changing Site Information
 
-All basic site information is kept in a Svelte store. Any component can access this information. The following is the baics found in the store:
+All basic site information is kept in a Svelte store. Any component can access this information. The following is the basics found in the store:
 
 <hr />
 ```javascript
@@ -337,7 +337,7 @@ true, the the `address` address is used. Otherwise, the `GitHub` address is used
 set to `false` and compiled before uploading to your GitHub site!
 
 The `styles` object contains all the styling information for the site. Most of them are very self
-explanitory as they are named similar to the CSS properties. If the `showSideBar` variable is set to
+explanatory as they are named similar to the CSS properties. If the `showSideBar` variable is set to
 true, the side bar will be visible on the left side if `sideBarLeft` is true. It'll be on the right
 if `sideBarLeft` is false. If `showSideBar` is false, then no side bars will be shown and the content
 area will take the full with under the header.
@@ -350,7 +350,7 @@ width that the sidebar will no longer be displayed at. You can set these to valu
 that makes sense for your site. A very short menu will not need as large of 
 a value as a short menu will.
 
-These variables can be set programmically as well. That way, you can setup pages with the side bar or
+These variables can be set programmatically as well. That way, you can setup pages with the side bar or
 without. You could also set all the styling information from a menu entry to have different styles
 for each user. I'll most likely be adding more features for this in future versions of the template.
 
@@ -395,7 +395,7 @@ is called whenever the component is unmounted (or removed from the DOM).
 
 If you need to make sure you have the latest information from a store before going forward with a function,
 you have to use the `get` function to get it from the store. The store variable that you load in isn't the
-actual store, but accessor function to it. You get the `get` funtion this way:
+actual store, but accessor function to it. You get the `get` function this way:
 
 <hr />
 ```javascript
@@ -412,7 +412,7 @@ You then use that function to get the most current value of the store. For examp
 <hr />
 
 Now, you can use `localvalue` just like you did `info` in the template. This is a read only variable. You can't set values in the
-store by using the locally saved variable. To change a store's vaule, you use the `set()` method of the store. This only works if
+store by using the locally saved variable. To change a store's value, you use the `set()` method of the store. This only works if
 the new value is different (ie: 1 instead of 0). But for structures, this might not always be the case. Be careful.
 
 ## Changing the Menus
@@ -520,7 +520,7 @@ And make sure the file is in the `site` directory.
 
 ## Changing the Main, Sidebar, and Footer Components
 
-The main page (or more often refered to as the index page) is in the file `Index.svexy` file. It
+The main page (or more often referred to as the index page) is in the file `Index.svexy` file. It
 has the same layout as the `About.svexy` that we have already examined. Just add the markdown
 text you want in the main page. You can also include other components if needed.
 
@@ -535,19 +535,19 @@ The format of the `site` directory is as follow:
 
 ```sh
 public/site
-├── 404.md
-├── blog
-│   ├── index.md
-│   └── my-first-post.md
-└── parts
-    └── test.html
+├─þX─þX 404.md
+├─þX─þX blog
+│   ├─þX─þX index.md
+│   └─þX─þX my-first-post.md
+└─þX─þX parts
+    └─þX─þX test.html
 ```
 
 Everything under the `site` directory is available to be sent as a page. The items in the `parts` directory can be seen
-as a page if they are markdown (ie: if the name of the file ends in `.md`). But, most partials will be html since
+as a page if they are markdown (ie: if the name of the file ends in `.md`). But, most partials will be HTML since
 they are not processed through the markdown and Handlebars processors. But, I think I will be doing that in the future.
 
-Every page needs to be a markdown file with the ending `.md`. The files in a subdirectory are accessed as the path is normally
+Every page needs to be a markdown file with the ending `.md`. The files in a sub-directory are accessed as the path is normally
 seen. For example, the index for the blog page is `/blog/index`. For this reason, all directories should be a single word without
 and spaces or anything that isn't a letter or a number (ie: all punctuation and special symbols).
 
@@ -571,11 +571,11 @@ Each post can display it in any format given in the heading section as seen here
 &#35;&#35;&#35;&#35; &#123;&#123;cdate date 'MMMM D, YYYY'&#125;&#125;<br>
 <hr />
 
-The date is taken from the YAML head matter and formated using the `cdate` helper function. The format is the
-[Moment.js](https://momentjs.com/) formating. You can change these to anything you want. This
+The date is taken from the YAML head matter and formatted using the `cdate` helper function. The format is the
+[Moment.js](https://momentjs.com/) formatting. You can change these to anything you want. This
 is just the formatting that I'm using on my site.
 
-Each variable in the YAML head matter is also accessable using the Handlebar helpers just as the `title` was
+Each variable in the YAML head matter is also accessible using the Handlebar helpers just as the `title` was
 used in the above example.
 
 The rest of the file is whatever markdown and text you want in your post or page.
@@ -586,7 +586,7 @@ I'm assuming that you already have a [GitHub Pages repository setup](https://gui
 go ahead and do that. Once setup, clone the repository to the directory `launch`. That is best done by doing the
 `git clone` command in the templates directory, copy the files/directories in the `launch` directory to that cloned
 directory, delete the current `launch` directory, and rename the cloned git directory to `launch`. The build script will
-place all your site's information into the lauch directory and upload it to GitHub.
+place all your site's information into the launch directory and upload it to GitHub.
 
 Once the `launch` directory is setup, you can run:
 
@@ -624,7 +624,9 @@ of the Mask script.
 
 The file `CNAME` is the name of your site if your using your own domain name server
 for the site. GitHub Pages will then use the name in that file as the name of the
-webserver for your site.
+web-server for your site.
+
+You only have to compile the full site each time you change a Svelte component. If you are simply adding markdown files to the public directory area, then you can just copy them to the launch area and commit them to GitHub.
 
 ## Conclusion
 

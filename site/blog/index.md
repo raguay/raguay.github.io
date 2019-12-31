@@ -3,6 +3,7 @@ title: "Custom Computer Tools Blog"
 ---
 ## {{title}}
 
+- [My First Post on Dev.to](/#/blog/post-on-dev)
 - [Updated Svelte Code](/#/blog/updated-svelte-website-template)
 - [Svelte Based Website Template](/#/blog/svelte-website-template)
 - [Now Using a Svelte Powered Website on GitHub](/#/blog/svelte-based-website)
