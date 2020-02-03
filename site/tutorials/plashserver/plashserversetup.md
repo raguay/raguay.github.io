@@ -402,16 +402,16 @@ with absolute placement starting at the topmost left position.
 ```
 
 As before, I'm importing the thirtyMinute timer and the `onMount` command from
-  Svelte. I'll be using the timer to change the background every thirty minutes.
-  I'm also declaring the `config` property to be filled by the component that
-  calls it. I'm using two component variables: `background` for controling the
-  background style for the `div`, and `lastType` to keep track of the last type
-  of background used.
-  
+Svelte. I'll be using the timer to change the background every thirty minutes.
+I'm also declaring the `config` property to be filled by the component that
+calls it. I'm using two component variables: `background` for controling the
+background style for the `div`, and `lastType` to keep track of the last type
+of background used.
+
 ```javascript
-  $: background = setBackground(config);
+$: background = setBackground(config);
 ```
- 
+
 This line might look a little strange. This is how you mark a variable change as
 reactive. The `$:` tells Svelte to update the template whenever a variable
 referenced on this line changes. Therefore, if the `config` file changes the
@@ -420,48 +420,49 @@ in the `background` variable. That will trigger the `div` to be updated with the
 new styling.
 
 ```javascript 
-  function setBackground(config) {
-    var result = '';
-    var types = ['pic', 'solid', 'none'];
-    var usetype = config.backgroundType;
-    if(config.randomAll) {
-      do {
-        usetype = types[(Math.floor(types.length*Math.random()))];
-      } while(lastType === usetype);
-      lastType = usetype;
-    }
-
-    switch(usetype) {
-      case 'pic': 
-        var index = config.index;
-        if(config.random) {
-          //
-          // Get a random index for the number of images.
-          //
-          index = Math.floor(config.backgrounds.length*Math.random());
-        }
-        
-        //
-        // Set the background to that image.
-        //
-        result = 'background-image: url(\'' + config.backgrounds[index] + '\'); background-repeat: no-repeat; background-size: cover';
-        break;
-
-      case 'solid':
-        var index = config.index;
-        if(config.random) {
-          index = Math.floor(config.backgroundColors.length*Math.random());
-        }
-        result = config.backgroundColors[index];
-        break;
-        
-      case 'none':
-      default:
-        result = '';
-    }
-    return(result);
+function setBackground(config) {
+  var result = '';
+  var types = ['pic', 'solid', 'none'];
+  var usetype = config.backgroundType;
+  if(config.randomAll) {
+    do {
+      usetype = types[(Math.floor(types.length*Math.random()))];
+    } while(lastType === usetype);
+    lastType = usetype;
   }
+
+  switch(usetype) {
+    case 'pic': 
+      var index = config.index;
+      if(config.random) {
+        //
+        // Get a random index for the number of images.
+        //
+        index = Math.floor(config.backgrounds.length*Math.random());
+      }
+        
+      //
+      // Set the background to that image.
+      //
+      result = 'background-image: url(\'' + config.backgrounds[index] + '\'); background-repeat: no-repeat; background-size: cover';
+      break;
+
+    case 'solid':
+      var index = config.index;
+      if(config.random) {
+        index = Math.floor(config.backgroundColors.length*Math.random());
+      }
+      result = config.backgroundColors[index];
+      break;
+       
+    case 'none':
+    default:
+      result = '';
+  }
+  return(result);
+}
 ```
+
 The `setBackground()` function is responcible for setting the `background`
 variable to the correct value for displaying the different types of
 background. There are three types of background: `pic` which is a picture
@@ -471,11 +472,11 @@ fill, or `none` which will leave the background transparent and the user will
 set the background set by the operating system.
   
 The configuration for the `Desktop` component allows the user to set a random
-  item for each type (which has no meaning for `none`), and to use random types
-  of backgrounds as well. When using random types of backgrounds, the `lastType`
-  variable is checked to see if the new random one is the same. A new random
-  value will be generated until it doesn't match the `lastType`.
-  
+item for each type (which has no meaning for `none`), and to use random types
+of backgrounds as well. When using random types of backgrounds, the `lastType`
+variable is checked to see if the new random one is the same. A new random
+value will be generated until it doesn't match the `lastType`.
+
 ```javascript
   onMount(() => {
     const unsubscribeThirtyMinute = thirtyMinute.subscribe((value) => {
