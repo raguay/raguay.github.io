@@ -410,7 +410,7 @@ As before, I'm importing the thirtyMinute timer and the `onMount` command from
   
 ```javascript
   $: background = setBackground(config);
- ```
+```
  
 This line might look a little strange. This is how you mark a variable change as
 reactive. The `$:` tells Svelte to update the template whenever a variable
@@ -419,7 +419,7 @@ referenced on this line changes. Therefore, if the `config` file changes the
 in the `background` variable. That will trigger the `div` to be updated with the
 new styling.
 
- ```javascript 
+```javascript 
   function setBackground(config) {
     var result = '';
     var types = ['pic', 'solid', 'none'];
@@ -463,12 +463,12 @@ new styling.
   }
 ```
 The `setBackground()` function is responcible for setting the `background`
-  variable to the correct value for displaying the different types of
-  background. There are three types of background: `pic` which is a picture
-  obtained from the net (We will look into expanding that to local files in a
-  future tutorial), `color` which will set the background to a color or gradiant
-  fill, or `none` which will leave the background transparent and the user will
-  set the background set by the operating system.
+variable to the correct value for displaying the different types of
+background. There are three types of background: `pic` which is a picture
+obtained from the net (We will look into expanding that to local files in a
+future tutorial), `color` which will set the background to a color or gradiant
+fill, or `none` which will leave the background transparent and the user will
+set the background set by the operating system.
   
 The configuration for the `Desktop` component allows the user to set a random
   item for each type (which has no meaning for `none`), and to use random types
