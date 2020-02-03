@@ -1,5 +1,5 @@
 ---
-date: 2020-01-20
+date: 2020-02-03
 title: Series on Creating a Local Plash Server Using Svelte
 ---
 
@@ -15,6 +15,10 @@ series might be somewhat slow.
 All code for this series will be in the [SveltePlashServer](https://github.com/raguay/SveltePlashServer)
 GitHub repository. This repository will have the final code, not a step wise code
 increment. That is easer way for me to manage it all.
+
+If you come up with some additions to the project, just fork the repository, 
+add the new code, and send me a pull request. It would be great to get a 
+community around this project.
 
 - [Create a Local Plash Server Using Svelte - Setup and Beginning Files](/#/tutorials/plashserver/plashserversetup)
 
