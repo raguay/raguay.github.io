@@ -13,6 +13,6 @@ title: Tutorials
 
 ## Plash Server Tutorials
 
-- [Welcome to the Series](/#/tutorials/plashserver/serie)
+- [Welcome to the Series](/#/tutorials/plashserver/series)
 - [Create a Local Plash Server Using Svelte - Setup and Beginning Files](/#/tutorials/plashserver/plashserversetup)
 
