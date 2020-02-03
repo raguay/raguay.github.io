@@ -16,3 +16,5 @@ All code for this series will be in the [SveltePlashServer](https://github.com/r
 GitHub repository. This repository will have the final code, not a step wise code
 increment. That is easer way for me to manage it all.
 
+- [Create a Local Plash Server Using Svelte - Setup and Beginning Files](/#/tutorials/plashserver/plashserversetup)
+
