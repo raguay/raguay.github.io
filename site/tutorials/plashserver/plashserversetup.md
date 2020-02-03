@@ -390,7 +390,8 @@ the UI component definition.
 The styling for the Desktop is also very simple. Make it as larage as possible
 with absolute placement starting at the topmost left position.
 
-```html
+```javascript
+<script>
 import { onMount } from 'svelte';
 import { thirtyMinute } from '../store/thirtyMinuteStore.js';
 
@@ -418,7 +419,8 @@ referenced on this line changes. Therefore, if the `config` file changes the
 in the `background` variable. That will trigger the `div` to be updated with the
 new styling.
 
-```javascript 
+```javascript
+
 function setBackground(config) {
   var result = '';
   var types = ['pic', 'solid', 'none'];
