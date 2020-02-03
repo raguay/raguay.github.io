@@ -390,15 +390,14 @@ the UI component definition.
 The styling for the Desktop is also very simple. Make it as larage as possible
 with absolute placement starting at the topmost left position.
 
-```javascript
-<script>
-  import { onMount } from 'svelte';
-  import { thirtyMinute } from '../store/thirtyMinuteStore.js';
+```html
+import { onMount } from 'svelte';
+import { thirtyMinute } from '../store/thirtyMinuteStore.js';
 
-  export let config;
+export let config;
 
-  let background;
-  let lastType;
+let background;
+let lastType;
 ```
 
 As before, I'm importing the thirtyMinute timer and the `onMount` command from
@@ -440,7 +439,7 @@ function setBackground(config) {
         //
         index = Math.floor(config.backgrounds.length*Math.random());
       }
-        
+
       //
       // Set the background to that image.
       //
@@ -454,7 +453,7 @@ function setBackground(config) {
       }
       result = config.backgroundColors[index];
       break;
-       
+
     case 'none':
     default:
       result = '';
