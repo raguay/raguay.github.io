@@ -63,7 +63,7 @@ section, but a new variable and should be named accordingly. That new variable
 is then used in the template to display the information retrieved from the website.
 
 If there is a problem retrieving the information (site not available, network 
-issues, etc), the the section between the `{:catch e}` and the `{/await}` will 
+issues, etc), then the section between the `{:catch e}` and the `{/await}` will 
 be displayed. The `e` variable will contain information about the error. But, I'm 
 not interested in that. I want to show the last successful calculation. Therefore, 
 I'm displaying the variable `savedAmount` that is used to store the last calculated 
@@ -97,7 +97,7 @@ the screen (absolutely) and the font weight to use.
   let savedAmount;
 ```
 
-The code section starts as normal. I'm importing the `onMount` funtion to execute 
+The code section starts as normal. I'm importing the `onMount` function to execute 
 instruction upon mounting the widget. I'm also getting the `thirtyMinute` store to 
 get updates every thirty minutes to reload the exchange rate. In reality, the 
 exchange rate changes at most once an hour. I'm using the thirty minute timer in 
