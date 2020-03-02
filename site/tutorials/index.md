@@ -15,5 +15,5 @@ title: Tutorials
 
 - [Welcome to the Series](/#/tutorials/plashserver/series)
 - [Create a Local Plash Server Using Svelte - Setup and Beginning Files](/#/tutorials/plashserver/plashserversetup)
-- [New Tutorial on the Plash Server - Exchange Rate Widget](/#/tutorials/plashserver/exchagewidget)
+- [New Tutorial on the Plash Server - Exchange Rate Widget](/#/tutorials/plashserver/exchangewidget)
 
