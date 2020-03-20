@@ -4,6 +4,7 @@ title: "Custom Computer Tools Blog"
 
 ## {{title}}
 
+- [New Tutorial on the Plash Server - Corvid-19 Widget](/#/blog/covid19widget)
 - [New Tutorial on the Plash Server - Exchange Rate Widget](/#/blog/exchangerate-widget-plashserver)
 - [New Series on Creating a Plash Background Server](/#/blog/plashserver-series)
 - [My First Post on Dev.to](/#/blog/post-on-dev)
