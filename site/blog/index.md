@@ -16,3 +16,4 @@ title: "Custom Computer Tools Blog"
 - [Alfred Running Slower](/#/blog/Alfred-Running-Slower)
 - [My First Post](/#/blog/my-first-post)
 
+
