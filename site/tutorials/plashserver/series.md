@@ -1,5 +1,5 @@
 ---
-date: 2020-03-02
+date: 2020-03-20
 title: Series on Creating a Local Plash Server Using Svelte
 ---
 
@@ -22,4 +22,5 @@ community around this project.
 
 - [Create a Local Plash Server Using Svelte - Setup and Beginning Files](/#/tutorials/plashserver/plashserversetup)
 - [Creating the Exchange Rate Widget](/#/tutorials/plashserver/exchangewidget)
+- [Creating the Covid-19 Widget](/#/tutorials/plashserver/corvid19widget)
 
