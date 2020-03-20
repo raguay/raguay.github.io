@@ -22,5 +22,5 @@ community around this project.
 
 - [Create a Local Plash Server Using Svelte - Setup and Beginning Files](/#/tutorials/plashserver/plashserversetup)
 - [Creating the Exchange Rate Widget](/#/tutorials/plashserver/exchangewidget)
-- [Creating the Covid-19 Widget](/#/tutorials/plashserver/corvid19widget)
+- [Creating the Covid-19 Widget](/#/tutorials/plashserver/covid19widget)
 
