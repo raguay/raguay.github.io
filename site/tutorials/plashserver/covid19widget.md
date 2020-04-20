@@ -92,7 +92,7 @@ In the `src/components` directory, create the file `Corvid19.svelte` and put the
     //critical	1
     //casesPerOneMillion	3
     //
-    load = fetch('https://corona.lmao.ninja/countries/' + config.country)
+    load = fetch('https://corona.lmao.ninja/v2/countries/' + config.country)
     .then((response) => {
       return response.json();
     })
