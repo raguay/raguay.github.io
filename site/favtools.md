@@ -1,5 +1,5 @@
 ---
-title: LaunchBar Actions
+title: Favorite Tools
 date: 2018-11-15 18:00:57
 ---
 ## {{title}}
