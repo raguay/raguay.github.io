@@ -21,7 +21,7 @@ Here are some of my favorite tools on the Mac. I use these about everyday.
 
 - [EmailIt](https://github.com/raguay/EmailIt)
 
-EmailIt is a program for sending markdown emails. It also has templates, scripts for processing text, and much more. It is an open source program I'm creating for my own use and believe others can benefit from it as well.
+  EmailIt is a program for sending markdown emails. It also has templates, scripts for processing text, and much more. It is an open source program I'm creating for my own use and believe others can benefit from it as well.
 
 - [Modal File Manager](https://GitHub.com/raguay/ModalFileManager)
 
