@@ -25,15 +25,15 @@ EmailIt is a program for sending markdown emails. It also has templates, scripts
 
 - [Modal File Manager](https://GitHub.com/raguay/ModalFileManager)
 
-Since fman isn't actively being developed anymore and I really don't like Python as an extension language, I developed my own file manager using Wails and Svelte. It's a vim style hotkey system with themes and extensions downloadable from GitHub.
+  Since fman isn't actively being developed anymore and I really don't like Python as an extension language, I developed my own file manager using Wails and Svelte. It's a vim style hotkey system with themes and extensions downloadable from GitHub.
 
 - [BullitenBoard](https://github.com/raguay/BulletinBoard)
 
-BullitenBoard is a programmable dialog and message posting program. I use it for scripting dialogs to get information from a user.
+  BullitenBoard is a programmable dialog and message posting program. I use it for scripting dialogs to get information from a user.
 
 - [ScriptBar](https://GitHub.com/raguay/scriptbarapp)
 
-ScriptBar is similar to xBar, but puts information from scripts in a drop down instead of in the menubar.
+  ScriptBar is similar to xBar, but puts information from scripts in a drop down instead of in the menubar.
 
 - [fman](http://www.fman.io)
 
