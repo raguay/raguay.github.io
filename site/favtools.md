@@ -1,3 +1,14 @@
+```
+---
+title: LaunchBar Actions
+date: 2018-11-15 18:00:57
+---
+## {{title}}
+#### {{cdate date 'MMMM D, YYYY'}}
+
+
+```
+
 ## Favorite Tools
 
 ### Favorite Frameworks
