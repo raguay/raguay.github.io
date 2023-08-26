@@ -1,6 +1,6 @@
 ---
 title: Favorite Tools
-date: 2018-11-15 18:00:57
+date: 2023-08-26 18:00:57
 ---
 ## {{title}}
 #### {{cdate date 'MMMM D, YYYY'}}
